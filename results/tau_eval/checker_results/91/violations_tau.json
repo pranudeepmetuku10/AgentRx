@@ -1,0 +1,28 @@
+[
+  {
+    "task_id": "91",
+    "step_index": 32,
+    "assertion_name": "additional_order_summary_matches_tool_results",
+    "invariant_type": "RELATIONAL_POST",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "Compare the current assistant's additional-items summary with prior order-detail tool results. Every listed item must have its tool-reported name and price, and must appear under the section matching its order's delivered or pending status. The summary must include every order item other than the already-addressed Skateboards, Smart Watch, and E-Reader.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "assistant",
+          "content": "From your recent orders, here are the additional items that haven't been addressed yet:\n\n### Delivered Orders:\n- **Vacuum Cleaner** (canister, bagged, cordless) - $655.59 (Order #W7553978)  \n- **Tablet** (10-inch screen, 64GB storage, silver) - $903.95 (Order #W3239882)  \n- **Portable Charger** (10000mAh, wireless output, blue) - $105.85 (Order #W3239882)  \n- **Makeup Kit** (light skin tone, professional size, Brand A) - $256.14 (Order #W3239882)\n\n### Pending Orders:\n- **Digital Camera** (20MP, 10x zoom, CF card storage) - $3101.43 (Order #W2598324)  \n- **Espresso Machine** (19 bar pressure, 2L capacity, manual) - $3203.76 (Order #W2598324)\n\nLet me know which of these items you'd like to add to the return process!"
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "assistant",
+        "content": "From your recent orders, here are the additional items that haven't been addressed yet:\n\n### Delivered Orders:\n- **Vacuum Cleaner** (canister, bagged, cordless) - $655.59 (Order #W7553978)  \n- **Tablet** (10-inch screen, 64GB storage, silver) - $903.95 (Order #W3239882)  \n- **Portable Charger** (10000mAh, wireless output, blue) - $105.85 (Order #W3239882)  \n- **Makeup Kit** (light skin tone, professional size, Brand A) - $256.14 (Order #W3239882)\n\n### Pending Orders:\n- **Digital Camera** (20MP, 10x zoom, CF card storage) - $3101.43 (Order #W2598324)  \n- **Espresso Machine** (19 bar pressure, 2L capacity, manual) - $3203.76 (Order #W2598324)\n\nLet me know which of these items you'd like to add to the return process!"
+      }
+    },
+    "taxonomy_targets": [
+      "MisinterpretationOfToolOutput"
+    ]
+  }
+]

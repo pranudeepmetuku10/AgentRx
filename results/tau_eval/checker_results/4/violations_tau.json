@@ -1,0 +1,418 @@
+[
+  {
+    "task_id": "4",
+    "step_index": 7,
+    "assertion_name": "verify_calculate_tool_result_matches_expression",
+    "invariant_type": "RELATIONAL_POST",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "Find the most recent preceding assistant calculate call, evaluate its simple arithmetic expression (numbers with + - * /), and compare it, rounded to 2 decimals, with the numeric value in the current tool result. Fail if they differ by more than 0.005 or the call or result is missing.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "tool",
+          "content": "yusuf_rossi_9620"
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "tool",
+        "content": "yusuf_rossi_9620"
+      }
+    },
+    "taxonomy_targets": [
+      "MisinterpretationOfToolOutput"
+    ]
+  },
+  {
+    "task_id": "4",
+    "step_index": 9,
+    "assertion_name": "verify_calculate_tool_result_matches_expression",
+    "invariant_type": "RELATIONAL_POST",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "Find the most recent preceding assistant calculate call, evaluate its simple arithmetic expression (numbers with + - * /), and compare it, rounded to 2 decimals, with the numeric value in the current tool result. Fail if they differ by more than 0.005 or the call or result is missing.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "tool",
+          "content": "{\n  \"name\": {\n    \"first_name\": \"Yusuf\",\n    \"last_name\": \"Rossi\"\n  },\n  \"address\": {\n    \"address1\": \"763 Broadway\",\n    \"address2\": \"Suite 135\",\n    \"city\": \"Philadelphia\",\n    \"country\": \"USA\",\n    \"state\": \"PA\",\n    \"zip\": \"19122\"\n  },\n  \"email\": \"yusuf.rossi7301@example.com\",\n  \"payment_methods\": {\n    \"credit_card_9513926\": {\n      \"source\": \"credit_card\",\n      \"brand\": \"mastercard\",\n      \"last_four\": \"2478\",\n      \"id\": \"credit_card_9513926\"\n    }\n  },\n  \"orders\": [\n    \"#W6247578\",\n    \"#W9711842\",\n    \"#W4776164\",\n    \"#W6679257\",\n    \"#W2378156\"\n  ]\n}"
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "tool",
+        "content": "{\n  \"name\": {\n    \"first_name\": \"Yusuf\",\n    \"last_name\": \"Rossi\"\n  },\n  \"address\": {\n    \"address1\": \"763 Broadway\",\n    \"address2\": \"Suite 135\",\n    \"city\": \"Philadelphia\",\n    \"country\": \"USA\",\n    \"state\": \"PA\",\n    \"zip\": \"19122\"\n  },\n  \"email\": \"yusuf.rossi7301@example.com\",\n  \"payment_methods\": {\n    \"credit_card_9513926\": {\n      \"source\": \"credit_card\",\n      \"brand\": \"mastercard\",\n      \"last_four\": \"2478\",\n      \"id\": \"credit_card_9513926\"\n    }\n  },\n  \"orders\": [\n    \"#W6247578\",\n    \"#W9711842\",\n    \"#W4776164\",\n    \"#W6679257\",\n    \"#W2378156\"\n  ]\n}"
+      }
+    },
+    "taxonomy_targets": [
+      "MisinterpretationOfToolOutput"
+    ]
+  },
+  {
+    "task_id": "4",
+    "step_index": 11,
+    "assertion_name": "verify_calculate_tool_result_matches_expression",
+    "invariant_type": "RELATIONAL_POST",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "Find the most recent preceding assistant calculate call, evaluate its simple arithmetic expression (numbers with + - * /), and compare it, rounded to 2 decimals, with the numeric value in the current tool result. Fail if they differ by more than 0.005 or the call or result is missing.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "tool",
+          "content": "{\n  \"Action Camera\": \"3377618313\",\n  \"Air Purifier\": \"3821016478\",\n  \"Backpack\": \"2524789262\",\n  \"Bicycle\": \"9783735446\",\n  \"Bluetooth Speaker\": \"4768869376\",\n  \"Bookshelf\": \"8600330539\",\n  \"Coffee Maker\": \"7996920482\",\n  \"Cycling Helmet\": \"7765186836\",\n  \"Desk Lamp\": \"6817146515\",\n  \"Digital Camera\": \"8940227892\",\n  \"Dumbbell Set\": \"7233192239\",\n  \"E-Reader\": \"3801771308\",\n  \"Electric Kettle\": \"1075968781\",\n  \"Electric Toothbrush\": \"7352963235\",\n  \"Espresso Machine\": \"4354588079\",\n  \"Fleece Jacket\": \"8560156827\",\n  \"Gaming Mouse\": \"5713490933\",\n  \"Garden Hose\": \"6679515468\",\n  \"Grill\": \"6819683148\",\n  \"Headphones\": \"6992792935\",\n  \"Hiking Boots\": \"7363354090\",\n  \"Indoor Security Camera\": \"2985987096\",\n  \"Jigsaw Puzzle\": \"1808611083\",\n  \"LED Light Bulb\": \"2696197613\",\n  \"Laptop\": \"4760268021\",\n  \"Luggage Set\": \"5426915165\",\n  \"Makeup Kit\": \"5149340237\",\n  \"Mechanical Keyboard\": \"1656367028\",\n  \"Notebook\": \"2892623495\",\n  \"Office Chair\": \"4794339885\",\n  \"Patio Umbrella\": \"9743693396\",\n  \"Perfume\": \"6858788497\",\n  \"Pet Bed\": \"2747247837\",\n  \"Portable Charger\": \"6942297802\",\n  \"Running Shoes\": \"6938111410\",\n  \"Skateboard\": \"1968349452\",\n  \"Smart Thermostat\": \"4896585277\",\n  \"Smart Watch\": \"6945232052\",\n  \"Smartphone\": \"1801728040\",\n  \"Sneakers\": \"7471004230\",\n  \"Sunglasses\": \"7314138884\",\n  \"T-Shirt\": \"9523456873\",\n  \"Tablet\": \"8024098596\",\n  \"Tea Kettle\": \"9832717871\",\n  \"Vacuum Cleaner\": \"1762337868\",\n  \"Wall Clock\": \"2344688344\",\n  \"Water Bottle\": \"8310926033\",\n  \"Wireless Earbuds\": \"9924732112\",\n  \"Wristwatch\": \"6066914160\",\n  \"Yoga Mat\": \"4635925001\"\n}"
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "tool",
+        "content": "{\n  \"Action Camera\": \"3377618313\",\n  \"Air Purifier\": \"3821016478\",\n  \"Backpack\": \"2524789262\",\n  \"Bicycle\": \"9783735446\",\n  \"Bluetooth Speaker\": \"4768869376\",\n  \"Bookshelf\": \"8600330539\",\n  \"Coffee Maker\": \"7996920482\",\n  \"Cycling Helmet\": \"7765186836\",\n  \"Desk Lamp\": \"6817146515\",\n  \"Digital Camera\": \"8940227892\",\n  \"Dumbbell Set\": \"7233192239\",\n  \"E-Reader\": \"3801771308\",\n  \"Electric Kettle\": \"1075968781\",\n  \"Electric Toothbrush\": \"7352963235\",\n  \"Espresso Machine\": \"4354588079\",\n  \"Fleece Jacket\": \"8560156827\",\n  \"Gaming Mouse\": \"5713490933\",\n  \"Garden Hose\": \"6679515468\",\n  \"Grill\": \"6819683148\",\n  \"Headphones\": \"6992792935\",\n  \"Hiking Boots\": \"7363354090\",\n  \"Indoor Security Camera\": \"2985987096\",\n  \"Jigsaw Puzzle\": \"1808611083\",\n  \"LED Light Bulb\": \"2696197613\",\n  \"Laptop\": \"4760268021\",\n  \"Luggage Set\": \"5426915165\",\n  \"Makeup Kit\": \"5149340237\",\n  \"Mechanical Keyboard\": \"1656367028\",\n  \"Notebook\": \"2892623495\",\n  \"Office Chair\": \"4794339885\",\n  \"Patio Umbrella\": \"9743693396\",\n  \"Perfume\": \"6858788497\",\n  \"Pet Bed\": \"2747247837\",\n  \"Portable Charger\": \"6942297802\",\n  \"Running Shoes\": \"6938111410\",\n  \"Skateboard\": \"1968349452\",\n  \"Smart Thermostat\": \"4896585277\",\n  \"Smart Watch\": \"6945232052\",\n  \"Smartphone\": \"1801728040\",\n  \"Sneakers\": \"7471004230\",\n  \"Sunglasses\": \"7314138884\",\n  \"T-Shirt\": \"9523456873\",\n  \"Tablet\": \"8024098596\",\n  \"Tea Kettle\": \"9832717871\",\n  \"Vacuum Cleaner\": \"1762337868\",\n  \"Wall Clock\": \"2344688344\",\n  \"Water Bottle\": \"8310926033\",\n  \"Wireless Earbuds\": \"9924732112\",\n  \"Wristwatch\": \"6066914160\",\n  \"Yoga Mat\": \"4635925001\"\n}"
+      }
+    },
+    "taxonomy_targets": [
+      "MisinterpretationOfToolOutput"
+    ]
+  },
+  {
+    "task_id": "4",
+    "step_index": 13,
+    "assertion_name": "verify_calculate_tool_result_matches_expression",
+    "invariant_type": "RELATIONAL_POST",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "Find the most recent preceding assistant calculate call, evaluate its simple arithmetic expression (numbers with + - * /), and compare it, rounded to 2 decimals, with the numeric value in the current tool result. Fail if they differ by more than 0.005 or the call or result is missing.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "tool",
+          "content": "{\n  \"name\": \"T-Shirt\",\n  \"product_id\": \"9523456873\",\n  \"variants\": {\n    \"9612497925\": {\n      \"item_id\": \"9612497925\",\n      \"options\": {\n        \"color\": \"blue\",\n        \"size\": \"M\",\n        \"material\": \"cotton\",\n        \"style\": \"crew neck\"\n      },\n      \"available\": true,\n      \"price\": 50.88\n    },\n    \"8124970213\": {\n      \"item_id\": \"8124970213\",\n      \"options\": {\n        \"color\": \"purple\",\n        \"size\": \"XL\",\n        \"material\": \"cotton\",\n        \"style\": \"crew neck\"\n      },\n      \"available\": true,\n      \"price\": 49.67\n    },\n    \"9354168549\": {\n      \"item_id\": \"9354168549\",\n      \"options\": {\n        \"color\": \"red\",\n        \"size\": \"XXL\",\n        \"material\": \"cotton\",\n        \"style\": \"crew neck\"\n      },\n      \"available\": true,\n      \"price\": 46.85\n    },\n    \"5253880258\": {\n      \"item_id\": \"5253880258\",\n      \"options\": {\n        \"color\": \"black\",\n        \"size\": \"XXL\",\n        \"material\": \"polyester\",\n        \"style\": \"v-neck\"\n      },\n      \"available\": true,\n      \"price\": 49.52\n    },\n    \"1176194968\": {\n      \"item_id\": \"1176194968\",\n      \"options\": {\n        \"color\": \"black\",\n        \"size\": \"S\",\n        \"material\": \"polyester\",\n        \"style\": \"crew neck\"\n      },\n      \"available\": true,\n      \"price\": 52.88\n    },\n    \"9647292434\": {\n      \"item_id\": \"9647292434\",\n      \"options\": {\n        \"color\": \"purple\",\n        \"size\": \"S\",\n        \"material\": \"polyester\",\n        \"style\": \"v-neck\"\n      },\n      \"available\": true,\n      \"price\": 53.48\n    },\n    \"8349118980\": {\n      \"item_id\": \"8349118980\",\n      \"options\": {\n        \"color\": \"blue\",\n        \"size\": \"S\",\n        \"material\": \"cotton\",\n        \"style\": \"v-neck\"\n      },\n      \"available\": true,\n      \"price\": 53.43\n    },\n    \"5047954489\": {\n      \"item_id\": \"5047954489\",\n      \"options\": {\n        \"color\": \"blue\",\n        \"size\": \"S\",\n        \"material\": \"polyester\",\n        \"style\": \"v-neck\"\n      },\n      \"available\": false,\n      \"price\": 54.84\n    },\n    \"3799046073\": {\n      \"item_id\": \"3799046073\",\n      \"options\": {\n        \"color\": \"black\",\n        \"size\": \"XXL\",\n        \"material\": \"cotton\",\n        \"style\": \"crew neck\"\n      },\n      \"available\": true,\n      \"price\": 53.27\n    },\n    \"3234800602\": {\n      \"item_id\": \"3234800602\",\n      \"options\": {\n        \"color\": \"red\",\n        \"size\": \"L\",\n        \"material\": \"cotton\",\n        \"style\": \"v-neck\"\n      },\n      \"available\": true,\n      \"price\": 46.66\n    },\n    \"3542102174\": {\n      \"item_id\": \"3542102174\",\n      \"options\": {\n        \"color\": \"red\",\n        \"size\": \"S\",\n        \"material\": \"cotton\",\n        \"style\": \"crew neck\"\n      },\n      \"available\": false,\n      \"price\": 47.25\n    },\n    \"2060066974\": {\n      \"item_id\": \"2060066974\",\n      \"options\": {\n        \"color\": \"black\",\n        \"size\": \"XL\",\n        \"material\": \"cotton\",\n        \"style\": \"crew neck\"\n      },\n      \"available\": true,\n      \"price\": 51.05\n    }\n  }\n}"
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "tool",
+        "content": "{\n  \"name\": \"T-Shirt\",\n  \"product_id\": \"9523456873\",\n  \"variants\": {\n    \"9612497925\": {\n      \"item_id\": \"9612497925\",\n      \"options\": {\n        \"color\": \"blue\",\n        \"size\": \"M\",\n        \"material\": \"cotton\",\n        \"style\": \"crew neck\"\n      },\n      \"available\": true,\n      \"price\": 50.88\n    },\n    \"8124970213\": {\n      \"item_id\": \"8124970213\",\n      \"options\": {\n        \"color\": \"purple\",\n        \"size\": \"XL\",\n        \"material\": \"cotton\",\n        \"style\": \"crew neck\"\n      },\n      \"available\": true,\n      \"price\": 49.67\n    },\n    \"9354168549\": {\n      \"item_id\": \"9354168549\",\n      \"options\": {\n        \"color\": \"red\",\n        \"size\": \"XXL\",\n        \"material\": \"cotton\",\n        \"style\": \"crew neck\"\n      },\n      \"available\": true,\n      \"price\": 46.85\n    },\n    \"5253880258\": {\n      \"item_id\": \"5253880258\",\n      \"options\": {\n        \"color\": \"black\",\n        \"size\": \"XXL\",\n        \"material\": \"polyester\",\n        \"style\": \"v-neck\"\n      },\n      \"available\": true,\n      \"price\": 49.52\n    },\n    \"1176194968\": {\n      \"item_id\": \"1176194968\",\n      \"options\": {\n        \"color\": \"black\",\n        \"size\": \"S\",\n        \"material\": \"polyester\",\n        \"style\": \"crew neck\"\n      },\n      \"available\": true,\n      \"price\": 52.88\n    },\n    \"9647292434\": {\n      \"item_id\": \"9647292434\",\n      \"options\": {\n        \"color\": \"purple\",\n        \"size\": \"S\",\n        \"material\": \"polyester\",\n        \"style\": \"v-neck\"\n      },\n      \"available\": true,\n      \"price\": 53.48\n    },\n    \"8349118980\": {\n      \"item_id\": \"8349118980\",\n      \"options\": {\n        \"color\": \"blue\",\n        \"size\": \"S\",\n        \"material\": \"cotton\",\n        \"style\": \"v-neck\"\n      },\n      \"available\": true,\n      \"price\": 53.43\n    },\n    \"5047954489\": {\n      \"item_id\": \"5047954489\",\n      \"options\": {\n        \"color\": \"blue\",\n        \"size\": \"S\",\n        \"material\": \"polyester\",\n        \"style\": \"v-neck\"\n      },\n      \"available\": false,\n      \"price\": 54.84\n    },\n    \"3799046073\": {\n      \"item_id\": \"3799046073\",\n      \"options\": {\n        \"color\": \"black\",\n        \"size\": \"XXL\",\n        \"material\": \"cotton\",\n        \"style\": \"crew neck\"\n      },\n      \"available\": true,\n      \"price\": 53.27\n    },\n    \"3234800602\": {\n      \"item_id\": \"3234800602\",\n      \"options\": {\n        \"color\": \"red\",\n        \"size\": \"L\",\n        \"material\": \"cotton\",\n        \"style\": \"v-neck\"\n      },\n      \"available\": true,\n      \"price\": 46.66\n    },\n    \"3542102174\": {\n      \"item_id\": \"3542102174\",\n      \"options\": {\n        \"color\": \"red\",\n        \"size\": \"S\",\n        \"material\": \"cotton\",\n        \"style\": \"crew neck\"\n      },\n      \"available\": false,\n      \"price\": 47.25\n    },\n    \"2060066974\": {\n      \"item_id\": \"2060066974\",\n      \"options\": {\n        \"color\": \"black\",\n        \"size\": \"XL\",\n        \"material\": \"cotton\",\n        \"style\": \"crew neck\"\n      },\n      \"available\": true,\n      \"price\": 51.05\n    }\n  }\n}"
+      }
+    },
+    "taxonomy_targets": [
+      "MisinterpretationOfToolOutput"
+    ]
+  },
+  {
+    "task_id": "4",
+    "step_index": 14,
+    "assertion_name": "report_accurate_available_tshirt_option_count",
+    "invariant_type": "RELATIONAL_POST",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "For the assistant's current claim about the number of available T-shirt options, locate the preceding get_product_details result containing variants. Count variants whose available field is true and compare that count to the number claimed. Fail if the result or claim is missing, or if the counts differ.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "assistant",
+          "content": "Currently, there are 11 available T-shirt options in our online store. Each option varies by color, size, material, and style. Let me know if you'd like more details about any specific option!"
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "assistant",
+        "content": "Currently, there are 11 available T-shirt options in our online store. Each option varies by color, size, material, and style. Let me know if you'd like more details about any specific option!"
+      }
+    },
+    "taxonomy_targets": [
+      "MisinterpretationOfToolOutput"
+    ]
+  },
+  {
+    "task_id": "4",
+    "step_index": 17,
+    "assertion_name": "verify_calculate_tool_result_matches_expression",
+    "invariant_type": "RELATIONAL_POST",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "Find the most recent preceding assistant calculate call, evaluate its simple arithmetic expression (numbers with + - * /), and compare it, rounded to 2 decimals, with the numeric value in the current tool result. Fail if they differ by more than 0.005 or the call or result is missing.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "tool",
+          "content": "{\n  \"order_id\": \"#W6247578\",\n  \"user_id\": \"yusuf_rossi_9620\",\n  \"address\": {\n    \"address1\": \"763 Broadway\",\n    \"address2\": \"Suite 135\",\n    \"city\": \"Philadelphia\",\n    \"country\": \"USA\",\n    \"state\": \"PA\",\n    \"zip\": \"19122\"\n  },\n  \"items\": [\n    {\n      \"name\": \"T-Shirt\",\n      \"product_id\": \"9523456873\",\n      \"item_id\": \"3799046073\",\n      \"price\": 53.27,\n      \"options\": {\n        \"color\": \"black\",\n        \"size\": \"XXL\",\n        \"material\": \"cotton\",\n        \"style\": \"crew neck\"\n      }\n    }\n  ],\n  \"fulfillments\": [],\n  \"status\": \"pending\",\n  \"payment_history\": [\n    {\n      \"transaction_type\": \"payment\",\n      \"amount\": 53.27,\n      \"payment_method_id\": \"credit_card_9513926\"\n    }\n  ]\n}"
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "tool",
+        "content": "{\n  \"order_id\": \"#W6247578\",\n  \"user_id\": \"yusuf_rossi_9620\",\n  \"address\": {\n    \"address1\": \"763 Broadway\",\n    \"address2\": \"Suite 135\",\n    \"city\": \"Philadelphia\",\n    \"country\": \"USA\",\n    \"state\": \"PA\",\n    \"zip\": \"19122\"\n  },\n  \"items\": [\n    {\n      \"name\": \"T-Shirt\",\n      \"product_id\": \"9523456873\",\n      \"item_id\": \"3799046073\",\n      \"price\": 53.27,\n      \"options\": {\n        \"color\": \"black\",\n        \"size\": \"XXL\",\n        \"material\": \"cotton\",\n        \"style\": \"crew neck\"\n      }\n    }\n  ],\n  \"fulfillments\": [],\n  \"status\": \"pending\",\n  \"payment_history\": [\n    {\n      \"transaction_type\": \"payment\",\n      \"amount\": 53.27,\n      \"payment_method_id\": \"credit_card_9513926\"\n    }\n  ]\n}"
+      }
+    },
+    "taxonomy_targets": [
+      "MisinterpretationOfToolOutput"
+    ]
+  },
+  {
+    "task_id": "4",
+    "step_index": 19,
+    "assertion_name": "verify_calculate_tool_result_matches_expression",
+    "invariant_type": "RELATIONAL_POST",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "Find the most recent preceding assistant calculate call, evaluate its simple arithmetic expression (numbers with + - * /), and compare it, rounded to 2 decimals, with the numeric value in the current tool result. Fail if they differ by more than 0.005 or the call or result is missing.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "tool",
+          "content": "{\n  \"order_id\": \"#W9711842\",\n  \"user_id\": \"yusuf_rossi_9620\",\n  \"address\": {\n    \"address1\": \"763 Broadway\",\n    \"address2\": \"Suite 135\",\n    \"city\": \"Philadelphia\",\n    \"country\": \"USA\",\n    \"state\": \"PA\",\n    \"zip\": \"19122\"\n  },\n  \"items\": [\n    {\n      \"name\": \"Sunglasses\",\n      \"product_id\": \"7314138884\",\n      \"item_id\": \"4245201809\",\n      \"price\": 281.48,\n      \"options\": {\n        \"frame color\": \"black\",\n        \"lens color\": \"green\",\n        \"lens type\": \"non-polarized\",\n        \"frame material\": \"metal\"\n      }\n    }\n  ],\n  \"fulfillments\": [\n    {\n      \"tracking_id\": [\n        \"540934230326\"\n      ],\n      \"item_ids\": [\n        \"4245201809\"\n      ]\n    }\n  ],\n  \"status\": \"cancelled\",\n  \"payment_history\": [\n    {\n      \"transaction_type\": \"payment\",\n      \"amount\": 281.48,\n      \"payment_method_id\": \"credit_card_9513926\"\n    },\n    {\n      \"transaction_type\": \"refund\",\n      \"amount\": 281.48,\n      \"payment_method_id\": \"credit_card_9513926\"\n    }\n  ]\n}"
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "tool",
+        "content": "{\n  \"order_id\": \"#W9711842\",\n  \"user_id\": \"yusuf_rossi_9620\",\n  \"address\": {\n    \"address1\": \"763 Broadway\",\n    \"address2\": \"Suite 135\",\n    \"city\": \"Philadelphia\",\n    \"country\": \"USA\",\n    \"state\": \"PA\",\n    \"zip\": \"19122\"\n  },\n  \"items\": [\n    {\n      \"name\": \"Sunglasses\",\n      \"product_id\": \"7314138884\",\n      \"item_id\": \"4245201809\",\n      \"price\": 281.48,\n      \"options\": {\n        \"frame color\": \"black\",\n        \"lens color\": \"green\",\n        \"lens type\": \"non-polarized\",\n        \"frame material\": \"metal\"\n      }\n    }\n  ],\n  \"fulfillments\": [\n    {\n      \"tracking_id\": [\n        \"540934230326\"\n      ],\n      \"item_ids\": [\n        \"4245201809\"\n      ]\n    }\n  ],\n  \"status\": \"cancelled\",\n  \"payment_history\": [\n    {\n      \"transaction_type\": \"payment\",\n      \"amount\": 281.48,\n      \"payment_method_id\": \"credit_card_9513926\"\n    },\n    {\n      \"transaction_type\": \"refund\",\n      \"amount\": 281.48,\n      \"payment_method_id\": \"credit_card_9513926\"\n    }\n  ]\n}"
+      }
+    },
+    "taxonomy_targets": [
+      "MisinterpretationOfToolOutput"
+    ]
+  },
+  {
+    "task_id": "4",
+    "step_index": 23,
+    "assertion_name": "verify_calculate_tool_result_matches_expression",
+    "invariant_type": "RELATIONAL_POST",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "Find the most recent preceding assistant calculate call, evaluate its simple arithmetic expression (numbers with + - * /), and compare it, rounded to 2 decimals, with the numeric value in the current tool result. Fail if they differ by more than 0.005 or the call or result is missing.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "tool",
+          "content": "{\n  \"order_id\": \"#W4776164\",\n  \"user_id\": \"yusuf_rossi_9620\",\n  \"address\": {\n    \"address1\": \"763 Broadway\",\n    \"address2\": \"Suite 135\",\n    \"city\": \"Philadelphia\",\n    \"country\": \"USA\",\n    \"state\": \"PA\",\n    \"zip\": \"19122\"\n  },\n  \"items\": [\n    {\n      \"name\": \"T-Shirt\",\n      \"product_id\": \"9523456873\",\n      \"item_id\": \"8349118980\",\n      \"price\": 53.43,\n      \"options\": {\n        \"color\": \"blue\",\n        \"size\": \"S\",\n        \"material\": \"cotton\",\n        \"style\": \"v-neck\"\n      }\n    },\n    {\n      \"name\": \"Espresso Machine\",\n      \"product_id\": \"4354588079\",\n      \"item_id\": \"6324294385\",\n      \"price\": 2719.01,\n      \"options\": {\n        \"pressure\": \"9 bar\",\n        \"capacity\": \"1L\",\n        \"type\": \"automatic\"\n      }\n    }\n  ],\n  \"fulfillments\": [],\n  \"status\": \"pending\",\n  \"payment_history\": [\n    {\n      \"transaction_type\": \"payment\",\n      \"amount\": 2772.44,\n      \"payment_method_id\": \"credit_card_9513926\"\n    }\n  ]\n}"
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "tool",
+        "content": "{\n  \"order_id\": \"#W4776164\",\n  \"user_id\": \"yusuf_rossi_9620\",\n  \"address\": {\n    \"address1\": \"763 Broadway\",\n    \"address2\": \"Suite 135\",\n    \"city\": \"Philadelphia\",\n    \"country\": \"USA\",\n    \"state\": \"PA\",\n    \"zip\": \"19122\"\n  },\n  \"items\": [\n    {\n      \"name\": \"T-Shirt\",\n      \"product_id\": \"9523456873\",\n      \"item_id\": \"8349118980\",\n      \"price\": 53.43,\n      \"options\": {\n        \"color\": \"blue\",\n        \"size\": \"S\",\n        \"material\": \"cotton\",\n        \"style\": \"v-neck\"\n      }\n    },\n    {\n      \"name\": \"Espresso Machine\",\n      \"product_id\": \"4354588079\",\n      \"item_id\": \"6324294385\",\n      \"price\": 2719.01,\n      \"options\": {\n        \"pressure\": \"9 bar\",\n        \"capacity\": \"1L\",\n        \"type\": \"automatic\"\n      }\n    }\n  ],\n  \"fulfillments\": [],\n  \"status\": \"pending\",\n  \"payment_history\": [\n    {\n      \"transaction_type\": \"payment\",\n      \"amount\": 2772.44,\n      \"payment_method_id\": \"credit_card_9513926\"\n    }\n  ]\n}"
+      }
+    },
+    "taxonomy_targets": [
+      "MisinterpretationOfToolOutput"
+    ]
+  },
+  {
+    "task_id": "4",
+    "step_index": 25,
+    "assertion_name": "validate_order_details_match_requested_order_and_authenticated_user",
+    "invariant_type": "RELATIONAL_POST",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "For the current order-details tool result, compare its order_id with the order_id in the preceding assistant get_order_details call. Also compare its user_id with the user ID returned by the earlier successful identity-lookup tool result. Fail if either identifier differs or required evidence is missing.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "tool",
+          "content": "{\n  \"order_id\": \"#W6679257\",\n  \"user_id\": \"yusuf_rossi_9620\",\n  \"address\": {\n    \"address1\": \"763 Broadway\",\n    \"address2\": \"Suite 135\",\n    \"city\": \"Philadelphia\",\n    \"country\": \"USA\",\n    \"state\": \"PA\",\n    \"zip\": \"19122\"\n  },\n  \"items\": [\n    {\n      \"name\": \"Digital Camera\",\n      \"product_id\": \"8940227892\",\n      \"item_id\": \"5996159312\",\n      \"price\": 2895.55,\n      \"options\": {\n        \"resolution\": \"24MP\",\n        \"zoom\": \"3x\",\n        \"storage\": \"SD card\"\n      }\n    }\n  ],\n  \"fulfillments\": [\n    {\n      \"tracking_id\": [\n        \"522129247270\"\n      ],\n      \"item_ids\": [\n        \"5996159312\"\n      ]\n    }\n  ],\n  \"status\": \"delivered\",\n  \"payment_history\": [\n    {\n      \"transaction_type\": \"payment\",\n      \"amount\": 2895.55,\n      \"payment_method_id\": \"credit_card_9513926\"\n    }\n  ]\n}"
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "tool",
+        "content": "{\n  \"order_id\": \"#W6679257\",\n  \"user_id\": \"yusuf_rossi_9620\",\n  \"address\": {\n    \"address1\": \"763 Broadway\",\n    \"address2\": \"Suite 135\",\n    \"city\": \"Philadelphia\",\n    \"country\": \"USA\",\n    \"state\": \"PA\",\n    \"zip\": \"19122\"\n  },\n  \"items\": [\n    {\n      \"name\": \"Digital Camera\",\n      \"product_id\": \"8940227892\",\n      \"item_id\": \"5996159312\",\n      \"price\": 2895.55,\n      \"options\": {\n        \"resolution\": \"24MP\",\n        \"zoom\": \"3x\",\n        \"storage\": \"SD card\"\n      }\n    }\n  ],\n  \"fulfillments\": [\n    {\n      \"tracking_id\": [\n        \"522129247270\"\n      ],\n      \"item_ids\": [\n        \"5996159312\"\n      ]\n    }\n  ],\n  \"status\": \"delivered\",\n  \"payment_history\": [\n    {\n      \"transaction_type\": \"payment\",\n      \"amount\": 2895.55,\n      \"payment_method_id\": \"credit_card_9513926\"\n    }\n  ]\n}"
+      }
+    },
+    "taxonomy_targets": [
+      "MisinterpretationOfToolOutput"
+    ]
+  },
+  {
+    "task_id": "4",
+    "step_index": 25,
+    "assertion_name": "verify_calculate_tool_result_matches_expression",
+    "invariant_type": "RELATIONAL_POST",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "Find the most recent preceding assistant calculate call, evaluate its simple arithmetic expression (numbers with + - * /), and compare it, rounded to 2 decimals, with the numeric value in the current tool result. Fail if they differ by more than 0.005 or the call or result is missing.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "tool",
+          "content": "{\n  \"order_id\": \"#W6679257\",\n  \"user_id\": \"yusuf_rossi_9620\",\n  \"address\": {\n    \"address1\": \"763 Broadway\",\n    \"address2\": \"Suite 135\",\n    \"city\": \"Philadelphia\",\n    \"country\": \"USA\",\n    \"state\": \"PA\",\n    \"zip\": \"19122\"\n  },\n  \"items\": [\n    {\n      \"name\": \"Digital Camera\",\n      \"product_id\": \"8940227892\",\n      \"item_id\": \"5996159312\",\n      \"price\": 2895.55,\n      \"options\": {\n        \"resolution\": \"24MP\",\n        \"zoom\": \"3x\",\n        \"storage\": \"SD card\"\n      }\n    }\n  ],\n  \"fulfillments\": [\n    {\n      \"tracking_id\": [\n        \"522129247270\"\n      ],\n      \"item_ids\": [\n        \"5996159312\"\n      ]\n    }\n  ],\n  \"status\": \"delivered\",\n  \"payment_history\": [\n    {\n      \"transaction_type\": \"payment\",\n      \"amount\": 2895.55,\n      \"payment_method_id\": \"credit_card_9513926\"\n    }\n  ]\n}"
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "tool",
+        "content": "{\n  \"order_id\": \"#W6679257\",\n  \"user_id\": \"yusuf_rossi_9620\",\n  \"address\": {\n    \"address1\": \"763 Broadway\",\n    \"address2\": \"Suite 135\",\n    \"city\": \"Philadelphia\",\n    \"country\": \"USA\",\n    \"state\": \"PA\",\n    \"zip\": \"19122\"\n  },\n  \"items\": [\n    {\n      \"name\": \"Digital Camera\",\n      \"product_id\": \"8940227892\",\n      \"item_id\": \"5996159312\",\n      \"price\": 2895.55,\n      \"options\": {\n        \"resolution\": \"24MP\",\n        \"zoom\": \"3x\",\n        \"storage\": \"SD card\"\n      }\n    }\n  ],\n  \"fulfillments\": [\n    {\n      \"tracking_id\": [\n        \"522129247270\"\n      ],\n      \"item_ids\": [\n        \"5996159312\"\n      ]\n    }\n  ],\n  \"status\": \"delivered\",\n  \"payment_history\": [\n    {\n      \"transaction_type\": \"payment\",\n      \"amount\": 2895.55,\n      \"payment_method_id\": \"credit_card_9513926\"\n    }\n  ]\n}"
+      }
+    },
+    "taxonomy_targets": [
+      "MisinterpretationOfToolOutput"
+    ]
+  },
+  {
+    "task_id": "4",
+    "step_index": 27,
+    "assertion_name": "verify_calculate_tool_result_matches_expression",
+    "invariant_type": "RELATIONAL_POST",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "Find the most recent preceding assistant calculate call, evaluate its simple arithmetic expression (numbers with + - * /), and compare it, rounded to 2 decimals, with the numeric value in the current tool result. Fail if they differ by more than 0.005 or the call or result is missing.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "tool",
+          "content": "{\n  \"order_id\": \"#W2378156\",\n  \"user_id\": \"yusuf_rossi_9620\",\n  \"address\": {\n    \"address1\": \"763 Broadway\",\n    \"address2\": \"Suite 135\",\n    \"city\": \"Philadelphia\",\n    \"country\": \"USA\",\n    \"state\": \"PA\",\n    \"zip\": \"19122\"\n  },\n  \"items\": [\n    {\n      \"name\": \"Headphones\",\n      \"product_id\": \"6992792935\",\n      \"item_id\": \"4202497723\",\n      \"price\": 342.81,\n      \"options\": {\n        \"type\": \"over-ear\",\n        \"connectivity\": \"wireless\",\n        \"color\": \"blue\"\n      }\n    },\n    {\n      \"name\": \"Vacuum Cleaner\",\n      \"product_id\": \"1762337868\",\n      \"item_id\": \"4602305039\",\n      \"price\": 561.05,\n      \"options\": {\n        \"type\": \"robotic\",\n        \"bagged/bagless\": \"bagged\",\n        \"features\": \"cordless\"\n      }\n    },\n    {\n      \"name\": \"Mechanical Keyboard\",\n      \"product_id\": \"1656367028\",\n      \"item_id\": \"1151293680\",\n      \"price\": 272.33,\n      \"options\": {\n        \"switch type\": \"linear\",\n        \"backlight\": \"RGB\",\n        \"size\": \"full size\"\n      }\n    },\n    {\n      \"name\": \"Smart Thermostat\",\n      \"product_id\": \"4896585277\",\n      \"item_id\": \"4983901480\",\n      \"price\": 262.47,\n      \"options\": {\n        \"compatibility\": \"Apple HomeKit\",\n        \"color\": \"black\"\n      }\n    },\n    {\n      \"name\": \"Smart Watch\",\n      \"product_id\": \"6945232052\",\n      \"item_id\": \"9408160950\",\n      \"price\": 381.26,\n      \"options\": {\n        \"color\": \"gold\",\n        \"band material\": \"leather\",\n        \"display\": \"LCD\"\n      }\n    }\n  ],\n  \"fulfillments\": [\n    {\n      \"tracking_id\": [\n        \"843053632392\"\n      ],\n      \"item_ids\": [\n        \"4202497723\",\n        \"4602305039\",\n        \"1151293680\",\n        \"4983901480\",\n        \"9408160950\"\n      ]\n    }\n  ],\n  \"status\": \"delivered\",\n  \"payment_history\": [\n    {\n      \"transaction_type\": \"payment\",\n      \"amount\": 1819.92,\n      \"payment_method_id\": \"credit_card_9513926\"\n    }\n  ]\n}"
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "tool",
+        "content": "{\n  \"order_id\": \"#W2378156\",\n  \"user_id\": \"yusuf_rossi_9620\",\n  \"address\": {\n    \"address1\": \"763 Broadway\",\n    \"address2\": \"Suite 135\",\n    \"city\": \"Philadelphia\",\n    \"country\": \"USA\",\n    \"state\": \"PA\",\n    \"zip\": \"19122\"\n  },\n  \"items\": [\n    {\n      \"name\": \"Headphones\",\n      \"product_id\": \"6992792935\",\n      \"item_id\": \"4202497723\",\n      \"price\": 342.81,\n      \"options\": {\n        \"type\": \"over-ear\",\n        \"connectivity\": \"wireless\",\n        \"color\": \"blue\"\n      }\n    },\n    {\n      \"name\": \"Vacuum Cleaner\",\n      \"product_id\": \"1762337868\",\n      \"item_id\": \"4602305039\",\n      \"price\": 561.05,\n      \"options\": {\n        \"type\": \"robotic\",\n        \"bagged/bagless\": \"bagged\",\n        \"features\": \"cordless\"\n      }\n    },\n    {\n      \"name\": \"Mechanical Keyboard\",\n      \"product_id\": \"1656367028\",\n      \"item_id\": \"1151293680\",\n      \"price\": 272.33,\n      \"options\": {\n        \"switch type\": \"linear\",\n        \"backlight\": \"RGB\",\n        \"size\": \"full size\"\n      }\n    },\n    {\n      \"name\": \"Smart Thermostat\",\n      \"product_id\": \"4896585277\",\n      \"item_id\": \"4983901480\",\n      \"price\": 262.47,\n      \"options\": {\n        \"compatibility\": \"Apple HomeKit\",\n        \"color\": \"black\"\n      }\n    },\n    {\n      \"name\": \"Smart Watch\",\n      \"product_id\": \"6945232052\",\n      \"item_id\": \"9408160950\",\n      \"price\": 381.26,\n      \"options\": {\n        \"color\": \"gold\",\n        \"band material\": \"leather\",\n        \"display\": \"LCD\"\n      }\n    }\n  ],\n  \"fulfillments\": [\n    {\n      \"tracking_id\": [\n        \"843053632392\"\n      ],\n      \"item_ids\": [\n        \"4202497723\",\n        \"4602305039\",\n        \"1151293680\",\n        \"4983901480\",\n        \"9408160950\"\n      ]\n    }\n  ],\n  \"status\": \"delivered\",\n  \"payment_history\": [\n    {\n      \"transaction_type\": \"payment\",\n      \"amount\": 1819.92,\n      \"payment_method_id\": \"credit_card_9513926\"\n    }\n  ]\n}"
+      }
+    },
+    "taxonomy_targets": [
+      "MisinterpretationOfToolOutput"
+    ]
+  },
+  {
+    "task_id": "4",
+    "step_index": 31,
+    "assertion_name": "verify_calculate_tool_result_matches_expression",
+    "invariant_type": "RELATIONAL_POST",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "Find the most recent preceding assistant calculate call, evaluate its simple arithmetic expression (numbers with + - * /), and compare it, rounded to 2 decimals, with the numeric value in the current tool result. Fail if they differ by more than 0.005 or the call or result is missing.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "tool",
+          "content": ""
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "tool",
+        "content": ""
+      }
+    },
+    "taxonomy_targets": [
+      "MisinterpretationOfToolOutput"
+    ]
+  },
+  {
+    "task_id": "4",
+    "step_index": 33,
+    "assertion_name": "verify_calculate_tool_result_matches_expression",
+    "invariant_type": "RELATIONAL_POST",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "Find the most recent preceding assistant calculate call, evaluate its simple arithmetic expression (numbers with + - * /), and compare it, rounded to 2 decimals, with the numeric value in the current tool result. Fail if they differ by more than 0.005 or the call or result is missing.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "tool",
+          "content": "{\n  \"name\": \"T-Shirt\",\n  \"product_id\": \"9523456873\",\n  \"variants\": {\n    \"9612497925\": {\n      \"item_id\": \"9612497925\",\n      \"options\": {\n        \"color\": \"blue\",\n        \"size\": \"M\",\n        \"material\": \"cotton\",\n        \"style\": \"crew neck\"\n      },\n      \"available\": true,\n      \"price\": 50.88\n    },\n    \"8124970213\": {\n      \"item_id\": \"8124970213\",\n      \"options\": {\n        \"color\": \"purple\",\n        \"size\": \"XL\",\n        \"material\": \"cotton\",\n        \"style\": \"crew neck\"\n      },\n      \"available\": true,\n      \"price\": 49.67\n    },\n    \"9354168549\": {\n      \"item_id\": \"9354168549\",\n      \"options\": {\n        \"color\": \"red\",\n        \"size\": \"XXL\",\n        \"material\": \"cotton\",\n        \"style\": \"crew neck\"\n      },\n      \"available\": true,\n      \"price\": 46.85\n    },\n    \"5253880258\": {\n      \"item_id\": \"5253880258\",\n      \"options\": {\n        \"color\": \"black\",\n        \"size\": \"XXL\",\n        \"material\": \"polyester\",\n        \"style\": \"v-neck\"\n      },\n      \"available\": true,\n      \"price\": 49.52\n    },\n    \"1176194968\": {\n      \"item_id\": \"1176194968\",\n      \"options\": {\n        \"color\": \"black\",\n        \"size\": \"S\",\n        \"material\": \"polyester\",\n        \"style\": \"crew neck\"\n      },\n      \"available\": true,\n      \"price\": 52.88\n    },\n    \"9647292434\": {\n      \"item_id\": \"9647292434\",\n      \"options\": {\n        \"color\": \"purple\",\n        \"size\": \"S\",\n        \"material\": \"polyester\",\n        \"style\": \"v-neck\"\n      },\n      \"available\": true,\n      \"price\": 53.48\n    },\n    \"8349118980\": {\n      \"item_id\": \"8349118980\",\n      \"options\": {\n        \"color\": \"blue\",\n        \"size\": \"S\",\n        \"material\": \"cotton\",\n        \"style\": \"v-neck\"\n      },\n      \"available\": true,\n      \"price\": 53.43\n    },\n    \"5047954489\": {\n      \"item_id\": \"5047954489\",\n      \"options\": {\n        \"color\": \"blue\",\n        \"size\": \"S\",\n        \"material\": \"polyester\",\n        \"style\": \"v-neck\"\n      },\n      \"available\": false,\n      \"price\": 54.84\n    },\n    \"3799046073\": {\n      \"item_id\": \"3799046073\",\n      \"options\": {\n        \"color\": \"black\",\n        \"size\": \"XXL\",\n        \"material\": \"cotton\",\n        \"style\": \"crew neck\"\n      },\n      \"available\": true,\n      \"price\": 53.27\n    },\n    \"3234800602\": {\n      \"item_id\": \"3234800602\",\n      \"options\": {\n        \"color\": \"red\",\n        \"size\": \"L\",\n        \"material\": \"cotton\",\n        \"style\": \"v-neck\"\n      },\n      \"available\": true,\n      \"price\": 46.66\n    },\n    \"3542102174\": {\n      \"item_id\": \"3542102174\",\n      \"options\": {\n        \"color\": \"red\",\n        \"size\": \"S\",\n        \"material\": \"cotton\",\n        \"style\": \"crew neck\"\n      },\n      \"available\": false,\n      \"price\": 47.25\n    },\n    \"2060066974\": {\n      \"item_id\": \"2060066974\",\n      \"options\": {\n        \"color\": \"black\",\n        \"size\": \"XL\",\n        \"material\": \"cotton\",\n        \"style\": \"crew neck\"\n      },\n      \"available\": true,\n      \"price\": 51.05\n    }\n  }\n}"
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "tool",
+        "content": "{\n  \"name\": \"T-Shirt\",\n  \"product_id\": \"9523456873\",\n  \"variants\": {\n    \"9612497925\": {\n      \"item_id\": \"9612497925\",\n      \"options\": {\n        \"color\": \"blue\",\n        \"size\": \"M\",\n        \"material\": \"cotton\",\n        \"style\": \"crew neck\"\n      },\n      \"available\": true,\n      \"price\": 50.88\n    },\n    \"8124970213\": {\n      \"item_id\": \"8124970213\",\n      \"options\": {\n        \"color\": \"purple\",\n        \"size\": \"XL\",\n        \"material\": \"cotton\",\n        \"style\": \"crew neck\"\n      },\n      \"available\": true,\n      \"price\": 49.67\n    },\n    \"9354168549\": {\n      \"item_id\": \"9354168549\",\n      \"options\": {\n        \"color\": \"red\",\n        \"size\": \"XXL\",\n        \"material\": \"cotton\",\n        \"style\": \"crew neck\"\n      },\n      \"available\": true,\n      \"price\": 46.85\n    },\n    \"5253880258\": {\n      \"item_id\": \"5253880258\",\n      \"options\": {\n        \"color\": \"black\",\n        \"size\": \"XXL\",\n        \"material\": \"polyester\",\n        \"style\": \"v-neck\"\n      },\n      \"available\": true,\n      \"price\": 49.52\n    },\n    \"1176194968\": {\n      \"item_id\": \"1176194968\",\n      \"options\": {\n        \"color\": \"black\",\n        \"size\": \"S\",\n        \"material\": \"polyester\",\n        \"style\": \"crew neck\"\n      },\n      \"available\": true,\n      \"price\": 52.88\n    },\n    \"9647292434\": {\n      \"item_id\": \"9647292434\",\n      \"options\": {\n        \"color\": \"purple\",\n        \"size\": \"S\",\n        \"material\": \"polyester\",\n        \"style\": \"v-neck\"\n      },\n      \"available\": true,\n      \"price\": 53.48\n    },\n    \"8349118980\": {\n      \"item_id\": \"8349118980\",\n      \"options\": {\n        \"color\": \"blue\",\n        \"size\": \"S\",\n        \"material\": \"cotton\",\n        \"style\": \"v-neck\"\n      },\n      \"available\": true,\n      \"price\": 53.43\n    },\n    \"5047954489\": {\n      \"item_id\": \"5047954489\",\n      \"options\": {\n        \"color\": \"blue\",\n        \"size\": \"S\",\n        \"material\": \"polyester\",\n        \"style\": \"v-neck\"\n      },\n      \"available\": false,\n      \"price\": 54.84\n    },\n    \"3799046073\": {\n      \"item_id\": \"3799046073\",\n      \"options\": {\n        \"color\": \"black\",\n        \"size\": \"XXL\",\n        \"material\": \"cotton\",\n        \"style\": \"crew neck\"\n      },\n      \"available\": true,\n      \"price\": 53.27\n    },\n    \"3234800602\": {\n      \"item_id\": \"3234800602\",\n      \"options\": {\n        \"color\": \"red\",\n        \"size\": \"L\",\n        \"material\": \"cotton\",\n        \"style\": \"v-neck\"\n      },\n      \"available\": true,\n      \"price\": 46.66\n    },\n    \"3542102174\": {\n      \"item_id\": \"3542102174\",\n      \"options\": {\n        \"color\": \"red\",\n        \"size\": \"S\",\n        \"material\": \"cotton\",\n        \"style\": \"crew neck\"\n      },\n      \"available\": false,\n      \"price\": 47.25\n    },\n    \"2060066974\": {\n      \"item_id\": \"2060066974\",\n      \"options\": {\n        \"color\": \"black\",\n        \"size\": \"XL\",\n        \"material\": \"cotton\",\n        \"style\": \"crew neck\"\n      },\n      \"available\": true,\n      \"price\": 51.05\n    }\n  }\n}"
+      }
+    },
+    "taxonomy_targets": [
+      "MisinterpretationOfToolOutput"
+    ]
+  },
+  {
+    "task_id": "4",
+    "step_index": 35,
+    "assertion_name": "verify_calculate_tool_result_matches_expression",
+    "invariant_type": "RELATIONAL_POST",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "Find the most recent preceding assistant calculate call, evaluate its simple arithmetic expression (numbers with + - * /), and compare it, rounded to 2 decimals, with the numeric value in the current tool result. Fail if they differ by more than 0.005 or the call or result is missing.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "tool",
+          "content": ""
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "tool",
+        "content": ""
+      }
+    },
+    "taxonomy_targets": [
+      "MisinterpretationOfToolOutput"
+    ]
+  },
+  {
+    "task_id": "4",
+    "step_index": 36,
+    "assertion_name": "calculate_first_tshirt_price_difference_correctly",
+    "invariant_type": "RELATIONAL_POST",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "For the current calculate call, verify that its subtraction uses the available requested variant's price minus the original T-shirt price in order #W6247578. Fail if the call, source prices, or subtraction expression is missing or if either operand differs from the corresponding tool-result price.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "assistant",
+          "content": "[\n  {\n    \"function\": {\n      \"arguments\": \"{\\\"expression\\\":\\\"53.48 - 53.27\\\"}\",\n      \"name\": \"calculate\"\n    },\n    \"id\": \"call_Y8BRFsLKGNY5e7lKNOh3oKnp\",\n    \"type\": \"function\"\n  }\n]"
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "assistant",
+        "content": "[\n  {\n    \"function\": {\n      \"arguments\": \"{\\\"expression\\\":\\\"53.48 - 53.27\\\"}\",\n      \"name\": \"calculate\"\n    },\n    \"id\": \"call_Y8BRFsLKGNY5e7lKNOh3oKnp\",\n    \"type\": \"function\"\n  }\n]"
+      }
+    },
+    "taxonomy_targets": [
+      "MisinterpretationOfToolOutput"
+    ]
+  },
+  {
+    "task_id": "4",
+    "step_index": 38,
+    "assertion_name": "calculate_second_tshirt_price_difference_correctly",
+    "invariant_type": "RELATIONAL_POST",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "For the current calculate call, verify that its subtraction uses the available requested variant's price minus the original T-shirt price in order #W4776164. Fail if the call, source prices, or subtraction expression is missing or if either operand differs from the corresponding tool-result price.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "assistant",
+          "content": "[\n  {\n    \"function\": {\n      \"arguments\": \"{\\\"expression\\\":\\\"53.48 - 53.43\\\"}\",\n      \"name\": \"calculate\"\n    },\n    \"id\": \"call_F6QeEVTF6dEMIxKwAMtOPbYS\",\n    \"type\": \"function\"\n  }\n]"
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "assistant",
+        "content": "[\n  {\n    \"function\": {\n      \"arguments\": \"{\\\"expression\\\":\\\"53.48 - 53.43\\\"}\",\n      \"name\": \"calculate\"\n    },\n    \"id\": \"call_F6QeEVTF6dEMIxKwAMtOPbYS\",\n    \"type\": \"function\"\n  }\n]"
+      }
+    },
+    "taxonomy_targets": [
+      "MisinterpretationOfToolOutput"
+    ]
+  }
+]

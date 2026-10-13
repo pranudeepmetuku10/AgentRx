@@ -1,0 +1,44 @@
+[
+  {
+    "task_id": "34",
+    "step_index": 11,
+    "assertion_name": "verify_order_items_sum_matches_payment_total",
+    "check_type": "python_check",
+    "check_time_sec": 0.0004,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 11,
+      "step_index": 12,
+      "function_name": "verify_order_items_sum_matches_payment_total",
+      "matched_substeps_count": 1,
+      "trajectory_length": 30
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "34",
+    "step_index": 16,
+    "assertion_name": "verify_modify_pending_order_items_count_match",
+    "check_type": "python_check",
+    "check_time_sec": 0.0004,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 16,
+      "step_index": 17,
+      "function_name": "verify_modify_pending_order_items_count_match",
+      "matched_substeps_count": 1,
+      "trajectory_length": 30
+    },
+    "check_output": {
+      "result": false,
+      "violated": true
+    }
+  }
+]

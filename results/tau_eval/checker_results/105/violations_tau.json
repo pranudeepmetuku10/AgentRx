@@ -1,0 +1,80 @@
+[
+  {
+    "task_id": "105",
+    "step_index": 1,
+    "assertion_name": "opening_cancel_request_names_both_items_and_separate_orders",
+    "invariant_type": "ANY",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "At this step, verify that the user's opening cancellation request explicitly identifies the bookshelf and jigsaw and says they are from different orders. The check applies only to user messages in the current step; return False if any required detail is absent.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "user",
+          "content": "Hi! I'd like to cancel two items I received recently."
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "user",
+        "content": "Hi! I'd like to cancel two items I received recently."
+      }
+    },
+    "taxonomy_targets": [
+      "IntentPlanMisalignment"
+    ]
+  },
+  {
+    "task_id": "105",
+    "step_index": 14,
+    "assertion_name": "ask_for_return_details_one_at_a_time",
+    "invariant_type": "ANY",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "Verify the assistant does not ask for both the refund payment method and confirmation to proceed with the return in the same message. Return False if a current assistant message contains both requests.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "assistant",
+          "content": "I found two orders containing the items you want to return:\n\n1. **Bookshelf** (Order ID: #W8660475, Material: Wood, Color: White, Height: 5 ft)\n2. **Jigsaw Puzzle** (Order ID: #W6239298, Pieces: 2000, Theme: Art, Difficulty Level: Intermediate)\n\nTo proceed, I need you to confirm:\n- The payment method you'd like the refund to be processed to (either the original payment method or an existing gift card).\n- Confirmation to proceed with the return for these items."
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "assistant",
+        "content": "I found two orders containing the items you want to return:\n\n1. **Bookshelf** (Order ID: #W8660475, Material: Wood, Color: White, Height: 5 ft)\n2. **Jigsaw Puzzle** (Order ID: #W6239298, Pieces: 2000, Theme: Art, Difficulty Level: Intermediate)\n\nTo proceed, I need you to confirm:\n- The payment method you'd like the refund to be processed to (either the original payment method or an existing gift card).\n- Confirmation to proceed with the return for these items."
+      }
+    },
+    "taxonomy_targets": [
+      "Instruction/PlanAdherenceFailure"
+    ]
+  },
+  {
+    "task_id": "105",
+    "step_index": 26,
+    "assertion_name": "ask_for_return_details_one_at_a_time",
+    "invariant_type": "ANY",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "Verify the assistant does not ask for both the refund payment method and confirmation to proceed with the return in the same message. Return False if a current assistant message contains both requests.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "assistant",
+          "content": "I found the order containing the **Backpack** and **Vacuum Cleaner**:\n\n- **Order ID**: #W9218746\n  - **Backpack**: Color - Black, Size - Small, Material - Nylon, Compartment - Laptop\n  - **Vacuum Cleaner**: Type - Canister, Bagged, Features - Pet Hair Removal\n\nTo proceed, please confirm:\n1. The payment method you'd like the refund to be processed to (either the original payment method or an existing gift card).\n2. Confirmation to proceed with the return for these items."
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "assistant",
+        "content": "I found the order containing the **Backpack** and **Vacuum Cleaner**:\n\n- **Order ID**: #W9218746\n  - **Backpack**: Color - Black, Size - Small, Material - Nylon, Compartment - Laptop\n  - **Vacuum Cleaner**: Type - Canister, Bagged, Features - Pet Hair Removal\n\nTo proceed, please confirm:\n1. The payment method you'd like the refund to be processed to (either the original payment method or an existing gift card).\n2. Confirmation to proceed with the return for these items."
+      }
+    },
+    "taxonomy_targets": [
+      "Instruction/PlanAdherenceFailure"
+    ]
+  }
+]

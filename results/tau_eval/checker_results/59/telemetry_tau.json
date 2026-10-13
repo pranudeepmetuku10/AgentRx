@@ -1,0 +1,128 @@
+[
+  {
+    "task_id": "59",
+    "step_index": 4,
+    "assertion_name": "identity_lookup_matches_user_provided_details",
+    "check_type": "python_check",
+    "check_time_sec": 0.001,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 4,
+      "step_index": 5,
+      "function_name": "identity_lookup_matches_user_provided_details",
+      "matched_substeps_count": 1,
+      "trajectory_length": 26
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "59",
+    "step_index": 7,
+    "assertion_name": "transaction_total_equals_sum_of_line_items",
+    "check_type": "python_check",
+    "check_time_sec": 0.0003,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 7,
+      "step_index": 8,
+      "function_name": "transaction_total_equals_sum_of_line_items",
+      "matched_substeps_count": 1,
+      "trajectory_length": 26
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "59",
+    "step_index": 9,
+    "assertion_name": "transaction_total_equals_sum_of_line_items",
+    "check_type": "python_check",
+    "check_time_sec": 0.0003,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 9,
+      "step_index": 10,
+      "function_name": "transaction_total_equals_sum_of_line_items",
+      "matched_substeps_count": 1,
+      "trajectory_length": 26
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "59",
+    "step_index": 19,
+    "assertion_name": "cancellation_refund_matches_payment_total",
+    "check_type": "python_check",
+    "check_time_sec": 0.0004,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 19,
+      "step_index": 20,
+      "function_name": "cancellation_refund_matches_payment_total",
+      "matched_substeps_count": 1,
+      "trajectory_length": 26
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "59",
+    "step_index": 23,
+    "assertion_name": "transaction_total_equals_sum_of_line_items",
+    "check_type": "python_check",
+    "check_time_sec": 0.0003,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 23,
+      "step_index": 24,
+      "function_name": "transaction_total_equals_sum_of_line_items",
+      "matched_substeps_count": 1,
+      "trajectory_length": 26
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "59",
+    "step_index": 24,
+    "assertion_name": "stated_updated_order_total_matches_line_items",
+    "check_type": "python_check",
+    "check_time_sec": 0.0004,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 24,
+      "step_index": 25,
+      "function_name": "stated_updated_order_total_matches_line_items",
+      "matched_substeps_count": 1,
+      "trajectory_length": 26
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  }
+]

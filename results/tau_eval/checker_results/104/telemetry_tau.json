@@ -1,0 +1,471 @@
+[
+  {
+    "task_id": "104",
+    "step_index": 1,
+    "assertion_name": "initial_cancellation_request_names_both_items",
+    "check_type": "python_check",
+    "check_time_sec": 0.0003,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 1,
+      "step_index": 2,
+      "function_name": "initial_cancellation_request_names_both_items",
+      "matched_substeps_count": 1,
+      "trajectory_length": 58
+    },
+    "check_output": {
+      "result": false,
+      "violated": true
+    }
+  },
+  {
+    "task_id": "104",
+    "step_index": 4,
+    "assertion_name": "email_lookup_matches_user_provided_email",
+    "check_type": "python_check",
+    "check_time_sec": 0.0009,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 4,
+      "step_index": 5,
+      "function_name": "email_lookup_matches_user_provided_email",
+      "matched_substeps_count": 1,
+      "trajectory_length": 58
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "104",
+    "step_index": 10,
+    "assertion_name": "order_lookup_matches_authenticated_user_orders",
+    "check_type": "python_check",
+    "check_time_sec": 0.0005,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 10,
+      "step_index": 11,
+      "function_name": "order_lookup_matches_authenticated_user_orders",
+      "matched_substeps_count": 1,
+      "trajectory_length": 58
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "104",
+    "step_index": 13,
+    "assertion_name": "order_payment_total_matches_item_price_sum",
+    "check_type": "python_check",
+    "check_time_sec": 0.0004,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: Import of 'decimal' is not allowed in invariant checks Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 4, in order_payment_total_matches_item_price_sum\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 623, in _safe_import\n    raise ImportError(f\"Import of '{name}' is not allowed in invariant checks\")\nImportError: Import of 'decimal' is not allowed in invariant checks\n",
+    "check_input": {
+      "step_pos": 13,
+      "step_index": 13,
+      "trajectory_length": 58
+    },
+    "check_output": null
+  },
+  {
+    "task_id": "104",
+    "step_index": 14,
+    "assertion_name": "order_lookup_matches_authenticated_user_orders",
+    "check_type": "python_check",
+    "check_time_sec": 0.0005,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 14,
+      "step_index": 15,
+      "function_name": "order_lookup_matches_authenticated_user_orders",
+      "matched_substeps_count": 1,
+      "trajectory_length": 58
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "104",
+    "step_index": 15,
+    "assertion_name": "order_payment_total_matches_item_price_sum",
+    "check_type": "python_check",
+    "check_time_sec": 0.0004,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: Import of 'decimal' is not allowed in invariant checks Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 4, in order_payment_total_matches_item_price_sum\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 623, in _safe_import\n    raise ImportError(f\"Import of '{name}' is not allowed in invariant checks\")\nImportError: Import of 'decimal' is not allowed in invariant checks\n",
+    "check_input": {
+      "step_pos": 15,
+      "step_index": 15,
+      "trajectory_length": 58
+    },
+    "check_output": null
+  },
+  {
+    "task_id": "104",
+    "step_index": 16,
+    "assertion_name": "order_lookup_matches_authenticated_user_orders",
+    "check_type": "python_check",
+    "check_time_sec": 0.0182,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 16,
+      "step_index": 17,
+      "function_name": "order_lookup_matches_authenticated_user_orders",
+      "matched_substeps_count": 1,
+      "trajectory_length": 58
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "104",
+    "step_index": 17,
+    "assertion_name": "order_payment_total_matches_item_price_sum",
+    "check_type": "python_check",
+    "check_time_sec": 0.0003,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: Import of 'decimal' is not allowed in invariant checks Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 4, in order_payment_total_matches_item_price_sum\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 623, in _safe_import\n    raise ImportError(f\"Import of '{name}' is not allowed in invariant checks\")\nImportError: Import of 'decimal' is not allowed in invariant checks\n",
+    "check_input": {
+      "step_pos": 17,
+      "step_index": 17,
+      "trajectory_length": 58
+    },
+    "check_output": null
+  },
+  {
+    "task_id": "104",
+    "step_index": 18,
+    "assertion_name": "order_lookup_matches_authenticated_user_orders",
+    "check_type": "python_check",
+    "check_time_sec": 0.0005,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 18,
+      "step_index": 19,
+      "function_name": "order_lookup_matches_authenticated_user_orders",
+      "matched_substeps_count": 1,
+      "trajectory_length": 58
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "104",
+    "step_index": 19,
+    "assertion_name": "order_payment_total_matches_item_price_sum",
+    "check_type": "python_check",
+    "check_time_sec": 0.0003,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: Import of 'decimal' is not allowed in invariant checks Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 4, in order_payment_total_matches_item_price_sum\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 623, in _safe_import\n    raise ImportError(f\"Import of '{name}' is not allowed in invariant checks\")\nImportError: Import of 'decimal' is not allowed in invariant checks\n",
+    "check_input": {
+      "step_pos": 19,
+      "step_index": 19,
+      "trajectory_length": 58
+    },
+    "check_output": null
+  },
+  {
+    "task_id": "104",
+    "step_index": 23,
+    "assertion_name": "return_refund_choice_matches_original_payment_method",
+    "check_type": "python_check",
+    "check_time_sec": 0.0005,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: Expecting value: line 1 column 1 (char 0) Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 13, in return_refund_choice_matches_original_payment_method\n  File \"/opt/anaconda3/lib/python3.13/json/__init__.py\", line 346, in loads\n    return _default_decoder.decode(s)\n           ~~~~~~~~~~~~~~~~~~~~~~~^^^\n  File \"/opt/anaconda3/lib/python3.13/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.13/json/decoder.py\", line 363, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n",
+    "check_input": {
+      "step_pos": 23,
+      "step_index": 23,
+      "trajectory_length": 58
+    },
+    "check_output": null
+  },
+  {
+    "task_id": "104",
+    "step_index": 26,
+    "assertion_name": "returned_items_exist_in_target_order",
+    "check_type": "python_check",
+    "check_time_sec": 0.0007,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 26,
+      "step_index": 27,
+      "function_name": "returned_items_exist_in_target_order",
+      "matched_substeps_count": 1,
+      "trajectory_length": 58
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "104",
+    "step_index": 27,
+    "assertion_name": "return_result_matches_requested_action",
+    "check_type": "python_check",
+    "check_time_sec": 0.0006,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 27,
+      "step_index": 28,
+      "function_name": "return_result_matches_requested_action",
+      "matched_substeps_count": 1,
+      "trajectory_length": 58
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "104",
+    "step_index": 31,
+    "assertion_name": "backpack_return_refund_choice_matches_original_payment",
+    "check_type": "python_check",
+    "check_time_sec": 0.0008,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 31,
+      "step_index": 32,
+      "function_name": "backpack_return_refund_choice_matches_original_payment",
+      "matched_substeps_count": 1,
+      "trajectory_length": 58
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "104",
+    "step_index": 34,
+    "assertion_name": "returned_items_exist_in_target_order",
+    "check_type": "python_check",
+    "check_time_sec": 0.0006,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 34,
+      "step_index": 35,
+      "function_name": "returned_items_exist_in_target_order",
+      "matched_substeps_count": 1,
+      "trajectory_length": 58
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "104",
+    "step_index": 35,
+    "assertion_name": "return_result_matches_requested_action",
+    "check_type": "python_check",
+    "check_time_sec": 0.0005,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 35,
+      "step_index": 36,
+      "function_name": "return_result_matches_requested_action",
+      "matched_substeps_count": 1,
+      "trajectory_length": 58
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "104",
+    "step_index": 39,
+    "assertion_name": "requested_default_address_matches_chicago_profile",
+    "check_type": "python_check",
+    "check_time_sec": 0.0004,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 39,
+      "step_index": 40,
+      "function_name": "requested_default_address_matches_chicago_profile",
+      "matched_substeps_count": 1,
+      "trajectory_length": 58
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "104",
+    "step_index": 43,
+    "assertion_name": "address_update_result_matches_requested_action",
+    "check_type": "python_check",
+    "check_time_sec": 0.0006,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 43,
+      "step_index": 44,
+      "function_name": "address_update_result_matches_requested_action",
+      "matched_substeps_count": 1,
+      "trajectory_length": 58
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "104",
+    "step_index": 47,
+    "assertion_name": "red_luggage_variant_preserves_other_options",
+    "check_type": "python_check",
+    "check_time_sec": 0.0005,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: Expecting value: line 1 column 1 (char 0) Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 10, in red_luggage_variant_preserves_other_options\n  File \"/opt/anaconda3/lib/python3.13/json/__init__.py\", line 346, in loads\n    return _default_decoder.decode(s)\n           ~~~~~~~~~~~~~~~~~~~~~~~^^^\n  File \"/opt/anaconda3/lib/python3.13/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.13/json/decoder.py\", line 363, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n",
+    "check_input": {
+      "step_pos": 47,
+      "step_index": 47,
+      "trajectory_length": 58
+    },
+    "check_output": null
+  },
+  {
+    "task_id": "104",
+    "step_index": 49,
+    "assertion_name": "user_selects_red_variant_preserving_material_and_pieces",
+    "check_type": "python_check",
+    "check_time_sec": 0.0006,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 49,
+      "step_index": 50,
+      "function_name": "user_selects_red_variant_preserving_material_and_pieces",
+      "matched_substeps_count": 1,
+      "trajectory_length": 58
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "104",
+    "step_index": 50,
+    "assertion_name": "item_modification_price_difference_matches_tool_prices",
+    "check_type": "python_check",
+    "check_time_sec": 0.0008,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: Import of 'decimal' is not allowed in invariant checks Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 5, in item_modification_price_difference_matches_tool_prices\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 623, in _safe_import\n    raise ImportError(f\"Import of '{name}' is not allowed in invariant checks\")\nImportError: Import of 'decimal' is not allowed in invariant checks\n",
+    "check_input": {
+      "step_pos": 50,
+      "step_index": 50,
+      "trajectory_length": 58
+    },
+    "check_output": null
+  },
+  {
+    "task_id": "104",
+    "step_index": 53,
+    "assertion_name": "item_modification_result_matches_requested_action",
+    "check_type": "python_check",
+    "check_time_sec": 0.0008,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 53,
+      "step_index": 54,
+      "function_name": "item_modification_result_matches_requested_action",
+      "matched_substeps_count": 1,
+      "trajectory_length": 58
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "104",
+    "step_index": 55,
+    "assertion_name": "user_requests_tracking_number_for_cancelled_order",
+    "check_type": "python_check",
+    "check_time_sec": 0.0006,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 55,
+      "step_index": 56,
+      "function_name": "user_requests_tracking_number_for_cancelled_order",
+      "matched_substeps_count": 1,
+      "trajectory_length": 58
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "104",
+    "step_index": 56,
+    "assertion_name": "cancelled_order_tracking_response_matches_tool_result",
+    "check_type": "python_check",
+    "check_time_sec": 0.0005,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 56,
+      "step_index": 57,
+      "function_name": "cancelled_order_tracking_response_matches_tool_result",
+      "matched_substeps_count": 1,
+      "trajectory_length": 58
+    },
+    "check_output": {
+      "result": false,
+      "violated": true
+    }
+  }
+]

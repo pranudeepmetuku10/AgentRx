@@ -1,0 +1,165 @@
+[
+  {
+    "task_id": "41",
+    "step_index": 7,
+    "assertion_name": "profile_address_matches_task_address",
+    "check_type": "python_check",
+    "check_time_sec": 0.0003,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 7,
+      "step_index": 8,
+      "function_name": "profile_address_matches_task_address",
+      "matched_substeps_count": 1,
+      "trajectory_length": 24
+    },
+    "check_output": {
+      "result": false,
+      "violated": true
+    }
+  },
+  {
+    "task_id": "41",
+    "step_index": 8,
+    "assertion_name": "look_up_only_orders_listed_for_authenticated_user",
+    "check_type": "python_check",
+    "check_time_sec": 0.0005,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 8,
+      "step_index": 9,
+      "function_name": "look_up_only_orders_listed_for_authenticated_user",
+      "matched_substeps_count": 1,
+      "trajectory_length": 24
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "41",
+    "step_index": 9,
+    "assertion_name": "order_total_matches_item_prices_sum",
+    "check_type": "python_check",
+    "check_time_sec": 0.0004,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 9,
+      "step_index": 10,
+      "function_name": "order_total_matches_item_prices_sum",
+      "matched_substeps_count": 1,
+      "trajectory_length": 24
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "41",
+    "step_index": 10,
+    "assertion_name": "look_up_only_orders_listed_for_authenticated_user",
+    "check_type": "python_check",
+    "check_time_sec": 0.0005,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 10,
+      "step_index": 11,
+      "function_name": "look_up_only_orders_listed_for_authenticated_user",
+      "matched_substeps_count": 1,
+      "trajectory_length": 24
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "41",
+    "step_index": 11,
+    "assertion_name": "order_total_matches_item_prices_sum",
+    "check_type": "python_check",
+    "check_time_sec": 0.0003,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 11,
+      "step_index": 12,
+      "function_name": "order_total_matches_item_prices_sum",
+      "matched_substeps_count": 1,
+      "trajectory_length": 24
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "41",
+    "step_index": 14,
+    "assertion_name": "recommend_fewest_available_beginner_puzzle_variant",
+    "check_type": "python_check",
+    "check_time_sec": 0.0193,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: name 'next' is not defined Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 21, in recommend_fewest_available_beginner_puzzle_variant\nNameError: name 'next' is not defined\n",
+    "check_input": {
+      "step_pos": 14,
+      "step_index": 14,
+      "trajectory_length": 24
+    },
+    "check_output": null
+  },
+  {
+    "task_id": "41",
+    "step_index": 17,
+    "assertion_name": "order_total_matches_item_prices_sum",
+    "check_type": "python_check",
+    "check_time_sec": 0.0004,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 17,
+      "step_index": 18,
+      "function_name": "order_total_matches_item_prices_sum",
+      "matched_substeps_count": 1,
+      "trajectory_length": 24
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "41",
+    "step_index": 20,
+    "assertion_name": "reported_refund_matches_order_refund_amount",
+    "check_type": "python_check",
+    "check_time_sec": 0.0005,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 20,
+      "step_index": 21,
+      "function_name": "reported_refund_matches_order_refund_amount",
+      "matched_substeps_count": 1,
+      "trajectory_length": 24
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  }
+]

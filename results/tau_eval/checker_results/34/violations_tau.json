@@ -1,0 +1,29 @@
+[
+  {
+    "task_id": "34",
+    "step_index": 16,
+    "assertion_name": "verify_modify_pending_order_items_count_match",
+    "invariant_type": "SCHEMA",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "For the modify_pending_order_items tool call at the current step, verify that the count of item IDs to modify matches the count of new replacement item IDs. Each item being modified requires a corresponding replacement item, so item_ids and new_item_ids must have the same length.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "assistant",
+          "content": "[\n  {\n    \"function\": {\n      \"arguments\": \"{\\\"order_id\\\":\\\"#W1845024\\\",\\\"item_ids\\\":[\\\"1340995114\\\",\\\"7493556126\\\",\\\"8323284863\\\"],\\\"new_item_ids\\\":[],\\\"payment_method_id\\\":\\\"paypal_3169710\\\"}\",\n      \"name\": \"modify_pending_order_items\"\n    },\n    \"id\": \"call_tvyPAFreDpYbxxWGZJgjSpfY\",\n    \"type\": \"function\"\n  }\n]"
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "assistant",
+        "content": "[\n  {\n    \"function\": {\n      \"arguments\": \"{\\\"order_id\\\":\\\"#W1845024\\\",\\\"item_ids\\\":[\\\"1340995114\\\",\\\"7493556126\\\",\\\"8323284863\\\"],\\\"new_item_ids\\\":[],\\\"payment_method_id\\\":\\\"paypal_3169710\\\"}\",\n      \"name\": \"modify_pending_order_items\"\n    },\n    \"id\": \"call_tvyPAFreDpYbxxWGZJgjSpfY\",\n    \"type\": \"function\"\n  }\n]"
+      }
+    },
+    "taxonomy_targets": [
+      "InvalidInvocation: The agent encounters errors triggered by inputs that can't be parsed or validated e.g., syntax errors or tool calls with bad/missing arguments. Not involving wrong logic; just invalid inputs.",
+      "Instruction/PlanAdherenceFailure: The agent fails to follow the directions or the agreed plan by ignoring directives and skipping policy steps. This covers both under-execution (missed steps) and over-execution (unplanned or unnecessary actions, e.g., extra tool calls) that deviate from the static plan, domain policy or orchestrator plan."
+    ]
+  }
+]

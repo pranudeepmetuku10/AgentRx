@@ -1,0 +1,18 @@
+{
+  "completed_stages": [
+    "ir",
+    "dynamic",
+    "static",
+    "check",
+    "judge",
+    "report"
+  ],
+  "config": {
+    "input": "/Users/pmetuku/Downloads/AgentRx/data/tau_retail/tau_dataset_failed.json",
+    "domain": "tau",
+    "endpoint": "copilot",
+    "started": "2026-10-12T18:41:16.278521"
+  },
+  "ir_used_llm_fallback": false,
+  "ir_from_markdown": false
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "task_id": "2",
+    "step_index": 6,
+    "assertion_name": "verify_reported_tshirt_availability_count",
+    "invariant_type": "ANY",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "Compare the available T-shirt option count stated in the current assistant response with the count of variants marked available in the preceding product-details tool result. Fail if the counts differ.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "assistant",
+          "content": "Currently, there are 11 available T-shirt options in our online store. Each option varies by color, size, material, and style. Let me know if you'd like more details about any specific option!"
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "assistant",
+        "content": "Currently, there are 11 available T-shirt options in our online store. Each option varies by color, size, material, and style. Let me know if you'd like more details about any specific option!"
+      }
+    },
+    "taxonomy_targets": [
+      "MisinterpretationOfToolOutput"
+    ]
+  }
+]

@@ -1,0 +1,212 @@
+[
+  {
+    "task_id": "82",
+    "step_index": 7,
+    "assertion_name": "requested_credit_card_is_available_on_profile",
+    "check_type": "python_check",
+    "check_time_sec": 0.0004,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 7,
+      "step_index": 8,
+      "function_name": "requested_credit_card_is_available_on_profile",
+      "matched_substeps_count": 1,
+      "trajectory_length": 28
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "82",
+    "step_index": 10,
+    "assertion_name": "look_up_only_an_order_listed_on_authenticated_profile",
+    "check_type": "python_check",
+    "check_time_sec": 0.0007,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 10,
+      "step_index": 11,
+      "function_name": "look_up_only_an_order_listed_on_authenticated_profile",
+      "matched_substeps_count": 1,
+      "trajectory_length": 28
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "82",
+    "step_index": 11,
+    "assertion_name": "order_transaction_total_equals_sum_of_item_prices",
+    "check_type": "python_check",
+    "check_time_sec": 0.0005,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 11,
+      "step_index": 12,
+      "function_name": "order_transaction_total_equals_sum_of_item_prices",
+      "matched_substeps_count": 1,
+      "trajectory_length": 28
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "82",
+    "step_index": 12,
+    "assertion_name": "look_up_only_an_order_listed_on_authenticated_profile",
+    "check_type": "python_check",
+    "check_time_sec": 0.0005,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 12,
+      "step_index": 13,
+      "function_name": "look_up_only_an_order_listed_on_authenticated_profile",
+      "matched_substeps_count": 1,
+      "trajectory_length": 28
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "82",
+    "step_index": 13,
+    "assertion_name": "order_transaction_total_equals_sum_of_item_prices",
+    "check_type": "python_check",
+    "check_time_sec": 0.0004,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 13,
+      "step_index": 14,
+      "function_name": "order_transaction_total_equals_sum_of_item_prices",
+      "matched_substeps_count": 1,
+      "trajectory_length": 28
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "82",
+    "step_index": 14,
+    "assertion_name": "look_up_only_an_order_listed_on_authenticated_profile",
+    "check_type": "python_check",
+    "check_time_sec": 0.0005,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 14,
+      "step_index": 15,
+      "function_name": "look_up_only_an_order_listed_on_authenticated_profile",
+      "matched_substeps_count": 1,
+      "trajectory_length": 28
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "82",
+    "step_index": 15,
+    "assertion_name": "order_transaction_total_equals_sum_of_item_prices",
+    "check_type": "python_check",
+    "check_time_sec": 0.0073,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 15,
+      "step_index": 16,
+      "function_name": "order_transaction_total_equals_sum_of_item_prices",
+      "matched_substeps_count": 1,
+      "trajectory_length": 28
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "82",
+    "step_index": 16,
+    "assertion_name": "look_up_only_an_order_listed_on_authenticated_profile",
+    "check_type": "python_check",
+    "check_time_sec": 0.0004,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 16,
+      "step_index": 17,
+      "function_name": "look_up_only_an_order_listed_on_authenticated_profile",
+      "matched_substeps_count": 1,
+      "trajectory_length": 28
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "82",
+    "step_index": 23,
+    "assertion_name": "return_result_matches_requested_items_and_refund_method",
+    "check_type": "python_check",
+    "check_time_sec": 0.0005,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 23,
+      "step_index": 24,
+      "function_name": "return_result_matches_requested_items_and_refund_method",
+      "matched_substeps_count": 1,
+      "trajectory_length": 28
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "82",
+    "step_index": 25,
+    "assertion_name": "return_result_matches_requested_items_and_refund_method",
+    "check_type": "python_check",
+    "check_time_sec": 0.0006,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 25,
+      "step_index": 26,
+      "function_name": "return_result_matches_requested_items_and_refund_method",
+      "matched_substeps_count": 1,
+      "trajectory_length": 28
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  }
+]

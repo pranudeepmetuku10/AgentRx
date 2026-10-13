@@ -1,0 +1,55 @@
+[
+  {
+    "task_id": "104",
+    "step_index": 1,
+    "assertion_name": "initial_cancellation_request_names_both_items",
+    "invariant_type": "ANY",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "For the user's initial message in this step, verify that it explicitly names both the bookshelf and the jigsaw as the items to cancel. The message names only a couple of items without identifying them, so this check fails.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "user",
+          "content": "Hey there! I need to cancel a couple of items from the same order."
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "user",
+        "content": "Hey there! I need to cancel a couple of items from the same order."
+      }
+    },
+    "taxonomy_targets": [
+      "IntentPlanMisalignment",
+      "Instruction/PlanAdherenceFailure"
+    ]
+  },
+  {
+    "task_id": "104",
+    "step_index": 56,
+    "assertion_name": "cancelled_order_tracking_response_matches_tool_result",
+    "invariant_type": "PROVENANCE",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "For the assistant's response to the tracking-number request, find the most recent prior tool result for a cancelled order and extract its fulfillment tracking IDs. If tracking IDs are present, require the current assistant response to include each ID; a claim that no tracking number exists when IDs are present fails.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "assistant",
+          "content": "The cancelled order (#W1154986) does not have a tracking number because it was cancelled before shipment. If you need further details about this order or anything else, feel free to ask!"
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "assistant",
+        "content": "The cancelled order (#W1154986) does not have a tracking number because it was cancelled before shipment. If you need further details about this order or anything else, feel free to ask!"
+      }
+    },
+    "taxonomy_targets": [
+      "MisinterpretationOfToolOutput"
+    ]
+  }
+]

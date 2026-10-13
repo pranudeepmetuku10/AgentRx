@@ -1,0 +1,356 @@
+[
+  {
+    "task_id": "20",
+    "step_index": 13,
+    "assertion_name": "order_item_prices_match_payment_total",
+    "check_type": "python_check",
+    "check_time_sec": 0.0004,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 13,
+      "step_index": 14,
+      "function_name": "order_item_prices_match_payment_total",
+      "matched_substeps_count": 1,
+      "trajectory_length": 62
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "20",
+    "step_index": 15,
+    "assertion_name": "order_item_prices_match_payment_total",
+    "check_type": "python_check",
+    "check_time_sec": 0.0004,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 15,
+      "step_index": 16,
+      "function_name": "order_item_prices_match_payment_total",
+      "matched_substeps_count": 1,
+      "trajectory_length": 62
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "20",
+    "step_index": 17,
+    "assertion_name": "order_item_prices_match_payment_total",
+    "check_type": "python_check",
+    "check_time_sec": 0.0003,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 17,
+      "step_index": 18,
+      "function_name": "order_item_prices_match_payment_total",
+      "matched_substeps_count": 1,
+      "trajectory_length": 62
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "20",
+    "step_index": 31,
+    "assertion_name": "highest_available_keyboard_variant_exceeds_current_price",
+    "check_type": "python_check",
+    "check_time_sec": 0.0006,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: Expecting value: line 1 column 1 (char 0) Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 26, in highest_available_keyboard_variant_exceeds_current_price\n  File \"/opt/anaconda3/lib/python3.13/json/__init__.py\", line 346, in loads\n    return _default_decoder.decode(s)\n           ~~~~~~~~~~~~~~~~~~~~~~~^^^\n  File \"/opt/anaconda3/lib/python3.13/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.13/json/decoder.py\", line 363, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n",
+    "check_input": {
+      "step_pos": 31,
+      "step_index": 31,
+      "trajectory_length": 62
+    },
+    "check_output": null
+  },
+  {
+    "task_id": "20",
+    "step_index": 32,
+    "assertion_name": "shoe_product_lookup_matches_order_item",
+    "check_type": "python_check",
+    "check_time_sec": 0.0005,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: Expecting value: line 1 column 1 (char 0) Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 10, in shoe_product_lookup_matches_order_item\n  File \"/opt/anaconda3/lib/python3.13/json/__init__.py\", line 346, in loads\n    return _default_decoder.decode(s)\n           ~~~~~~~~~~~~~~~~~~~~~~~^^^\n  File \"/opt/anaconda3/lib/python3.13/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.13/json/decoder.py\", line 363, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n",
+    "check_input": {
+      "step_pos": 32,
+      "step_index": 32,
+      "trajectory_length": 62
+    },
+    "check_output": null
+  },
+  {
+    "task_id": "20",
+    "step_index": 33,
+    "assertion_name": "highest_available_shoe_variant_same_size_exceeds_current_price",
+    "check_type": "python_check",
+    "check_time_sec": 0.0005,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: Expecting value: line 1 column 1 (char 0) Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 24, in highest_available_shoe_variant_same_size_exceeds_current_price\n  File \"/opt/anaconda3/lib/python3.13/json/__init__.py\", line 346, in loads\n    return _default_decoder.decode(s)\n           ~~~~~~~~~~~~~~~~~~~~~~~^^^\n  File \"/opt/anaconda3/lib/python3.13/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.13/json/decoder.py\", line 363, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n",
+    "check_input": {
+      "step_pos": 33,
+      "step_index": 33,
+      "trajectory_length": 62
+    },
+    "check_output": null
+  },
+  {
+    "task_id": "20",
+    "step_index": 34,
+    "assertion_name": "makeup_kit_product_lookup_matches_order_item",
+    "check_type": "python_check",
+    "check_time_sec": 0.0011,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: Expecting value: line 1 column 1 (char 0) Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 10, in makeup_kit_product_lookup_matches_order_item\n  File \"/opt/anaconda3/lib/python3.13/json/__init__.py\", line 346, in loads\n    return _default_decoder.decode(s)\n           ~~~~~~~~~~~~~~~~~~~~~~~^^^\n  File \"/opt/anaconda3/lib/python3.13/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.13/json/decoder.py\", line 363, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n",
+    "check_input": {
+      "step_pos": 34,
+      "step_index": 34,
+      "trajectory_length": 62
+    },
+    "check_output": null
+  },
+  {
+    "task_id": "20",
+    "step_index": 35,
+    "assertion_name": "highest_available_makeup_kit_variant_exceeds_current_price",
+    "check_type": "python_check",
+    "check_time_sec": 0.0007,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: Expecting value: line 1 column 1 (char 0) Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 26, in highest_available_makeup_kit_variant_exceeds_current_price\n  File \"/opt/anaconda3/lib/python3.13/json/__init__.py\", line 346, in loads\n    return _default_decoder.decode(s)\n           ~~~~~~~~~~~~~~~~~~~~~~~^^^\n  File \"/opt/anaconda3/lib/python3.13/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.13/json/decoder.py\", line 363, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n",
+    "check_input": {
+      "step_pos": 35,
+      "step_index": 35,
+      "trajectory_length": 62
+    },
+    "check_output": null
+  },
+  {
+    "task_id": "20",
+    "step_index": 36,
+    "assertion_name": "portable_charger_product_lookup_matches_order_item",
+    "check_type": "python_check",
+    "check_time_sec": 0.0008,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: Expecting value: line 1 column 1 (char 0) Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 10, in portable_charger_product_lookup_matches_order_item\n  File \"/opt/anaconda3/lib/python3.13/json/__init__.py\", line 346, in loads\n    return _default_decoder.decode(s)\n           ~~~~~~~~~~~~~~~~~~~~~~~^^^\n  File \"/opt/anaconda3/lib/python3.13/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.13/json/decoder.py\", line 363, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n",
+    "check_input": {
+      "step_pos": 36,
+      "step_index": 36,
+      "trajectory_length": 62
+    },
+    "check_output": null
+  },
+  {
+    "task_id": "20",
+    "step_index": 37,
+    "assertion_name": "highest_available_portable_charger_variant_exceeds_current_price",
+    "check_type": "python_check",
+    "check_time_sec": 0.0004,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: Expecting value: line 1 column 1 (char 0) Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 26, in highest_available_portable_charger_variant_exceeds_current_price\n  File \"/opt/anaconda3/lib/python3.13/json/__init__.py\", line 346, in loads\n    return _default_decoder.decode(s)\n           ~~~~~~~~~~~~~~~~~~~~~~~^^^\n  File \"/opt/anaconda3/lib/python3.13/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.13/json/decoder.py\", line 363, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n",
+    "check_input": {
+      "step_pos": 37,
+      "step_index": 37,
+      "trajectory_length": 62
+    },
+    "check_output": null
+  },
+  {
+    "task_id": "20",
+    "step_index": 38,
+    "assertion_name": "electric_kettle_product_lookup_matches_order_item",
+    "check_type": "python_check",
+    "check_time_sec": 0.0004,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: Expecting value: line 1 column 1 (char 0) Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 10, in electric_kettle_product_lookup_matches_order_item\n  File \"/opt/anaconda3/lib/python3.13/json/__init__.py\", line 346, in loads\n    return _default_decoder.decode(s)\n           ~~~~~~~~~~~~~~~~~~~~~~~^^^\n  File \"/opt/anaconda3/lib/python3.13/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.13/json/decoder.py\", line 363, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n",
+    "check_input": {
+      "step_pos": 38,
+      "step_index": 38,
+      "trajectory_length": 62
+    },
+    "check_output": null
+  },
+  {
+    "task_id": "20",
+    "step_index": 39,
+    "assertion_name": "highest_available_electric_kettle_variant_exceeds_current_price",
+    "check_type": "python_check",
+    "check_time_sec": 0.0004,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: Expecting value: line 1 column 1 (char 0) Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 26, in highest_available_electric_kettle_variant_exceeds_current_price\n  File \"/opt/anaconda3/lib/python3.13/json/__init__.py\", line 346, in loads\n    return _default_decoder.decode(s)\n           ~~~~~~~~~~~~~~~~~~~~~~~^^^\n  File \"/opt/anaconda3/lib/python3.13/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.13/json/decoder.py\", line 363, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n",
+    "check_input": {
+      "step_pos": 39,
+      "step_index": 39,
+      "trajectory_length": 62
+    },
+    "check_output": null
+  },
+  {
+    "task_id": "20",
+    "step_index": 41,
+    "assertion_name": "proposed_upgrades_use_max_available_price",
+    "check_type": "python_check",
+    "check_time_sec": 0.0005,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 41,
+      "step_index": 42,
+      "function_name": "proposed_upgrades_use_max_available_price",
+      "matched_substeps_count": 1,
+      "trajectory_length": 62
+    },
+    "check_output": {
+      "result": false,
+      "violated": true
+    }
+  },
+  {
+    "task_id": "20",
+    "step_index": 44,
+    "assertion_name": "upgrade_cost_calculation_matches_order_and_proposed_prices",
+    "check_type": "python_check",
+    "check_time_sec": 0.0132,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 44,
+      "step_index": 45,
+      "function_name": "upgrade_cost_calculation_matches_order_and_proposed_prices",
+      "matched_substeps_count": 1,
+      "trajectory_length": 62
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "20",
+    "step_index": 46,
+    "assertion_name": "stated_total_and_remaining_balance_match_calculation",
+    "check_type": "python_check",
+    "check_time_sec": 0.0008,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 46,
+      "step_index": 47,
+      "function_name": "stated_total_and_remaining_balance_match_calculation",
+      "matched_substeps_count": 1,
+      "trajectory_length": 62
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "20",
+    "step_index": 48,
+    "assertion_name": "gift_card_has_sufficient_balance_for_exchange_or_modification",
+    "check_type": "python_check",
+    "check_time_sec": 0.0008,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 48,
+      "step_index": 49,
+      "function_name": "gift_card_has_sufficient_balance_for_exchange_or_modification",
+      "matched_substeps_count": 1,
+      "trajectory_length": 62
+    },
+    "check_output": {
+      "result": false,
+      "violated": true
+    }
+  },
+  {
+    "task_id": "20",
+    "step_index": 54,
+    "assertion_name": "gift_card_has_sufficient_balance_for_exchange_or_modification",
+    "check_type": "python_check",
+    "check_time_sec": 0.001,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 54,
+      "step_index": 55,
+      "function_name": "gift_card_has_sufficient_balance_for_exchange_or_modification",
+      "matched_substeps_count": 1,
+      "trajectory_length": 62
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "20",
+    "step_index": 58,
+    "assertion_name": "gift_card_has_sufficient_balance_for_exchange_or_modification",
+    "check_type": "python_check",
+    "check_time_sec": 0.001,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 58,
+      "step_index": 59,
+      "function_name": "gift_card_has_sufficient_balance_for_exchange_or_modification",
+      "matched_substeps_count": 1,
+      "trajectory_length": 62
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "20",
+    "step_index": 59,
+    "assertion_name": "order_item_prices_match_payment_total",
+    "check_type": "python_check",
+    "check_time_sec": 0.0003,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 59,
+      "step_index": 60,
+      "function_name": "order_item_prices_match_payment_total",
+      "matched_substeps_count": 1,
+      "trajectory_length": 62
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  }
+]

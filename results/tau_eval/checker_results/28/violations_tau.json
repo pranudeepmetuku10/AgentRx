@@ -1,0 +1,29 @@
+[
+  {
+    "task_id": "28",
+    "step_index": 30,
+    "assertion_name": "cancellation_offer_must_be_for_entire_order",
+    "invariant_type": "RELATIONAL_POST",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "When the assistant's user-facing message offers to cancel something from an order, find the order IDs it mentions and look up their item counts in prior order-details tool results. Cancellation applies to the entire pending order, so if the order has more than one item, the message must say that the entire or whole order (all items) would be cancelled. Fail if the message implies cancelling a single item from a multi-item order.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "assistant",
+          "content": "The garden hose you just ordered is part of **Order #W2575533**, which is currently in a \"pending\" status. Since the order has not been processed yet, it is possible to cancel it.\n\nCould you confirm that you'd like to cancel the garden hose from this order? Additionally, please provide the reason for cancellation: either \"no longer needed\" or \"ordered by mistake.\""
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "assistant",
+        "content": "The garden hose you just ordered is part of **Order #W2575533**, which is currently in a \"pending\" status. Since the order has not been processed yet, it is possible to cancel it.\n\nCould you confirm that you'd like to cancel the garden hose from this order? Additionally, please provide the reason for cancellation: either \"no longer needed\" or \"ordered by mistake.\""
+      }
+    },
+    "taxonomy_targets": [
+      "Instruction/PlanAdherenceFailure",
+      "InventionOfNewInformation"
+    ]
+  }
+]

@@ -1,0 +1,212 @@
+[
+  {
+    "task_id": "79",
+    "step_index": 7,
+    "assertion_name": "user_details_match_authenticated_identity",
+    "check_type": "python_check",
+    "check_time_sec": 0.0004,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 7,
+      "step_index": 8,
+      "function_name": "user_details_match_authenticated_identity",
+      "matched_substeps_count": 1,
+      "trajectory_length": 26
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "79",
+    "step_index": 8,
+    "assertion_name": "order_id_belongs_to_authenticated_user",
+    "check_type": "python_check",
+    "check_time_sec": 0.0006,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 8,
+      "step_index": 9,
+      "function_name": "order_id_belongs_to_authenticated_user",
+      "matched_substeps_count": 1,
+      "trajectory_length": 26
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "79",
+    "step_index": 11,
+    "assertion_name": "order_details_total_matches_item_prices",
+    "check_type": "python_check",
+    "check_time_sec": 0.0004,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 11,
+      "step_index": 12,
+      "function_name": "order_details_total_matches_item_prices",
+      "matched_substeps_count": 1,
+      "trajectory_length": 26
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "79",
+    "step_index": 12,
+    "assertion_name": "order_id_belongs_to_authenticated_user",
+    "check_type": "python_check",
+    "check_time_sec": 0.0005,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 12,
+      "step_index": 13,
+      "function_name": "order_id_belongs_to_authenticated_user",
+      "matched_substeps_count": 1,
+      "trajectory_length": 26
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "79",
+    "step_index": 13,
+    "assertion_name": "order_details_total_matches_item_prices",
+    "check_type": "python_check",
+    "check_time_sec": 0.0003,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 13,
+      "step_index": 14,
+      "function_name": "order_details_total_matches_item_prices",
+      "matched_substeps_count": 1,
+      "trajectory_length": 26
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "79",
+    "step_index": 16,
+    "assertion_name": "product_details_request_matches_order_water_bottle_product",
+    "check_type": "python_check",
+    "check_time_sec": 0.0006,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 16,
+      "step_index": 17,
+      "function_name": "product_details_request_matches_order_water_bottle_product",
+      "matched_substeps_count": 1,
+      "trajectory_length": 26
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "79",
+    "step_index": 17,
+    "assertion_name": "identify_available_1000ml_replacement_variants",
+    "check_type": "python_check",
+    "check_time_sec": 0.0251,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 17,
+      "step_index": 18,
+      "function_name": "identify_available_1000ml_replacement_variants",
+      "matched_substeps_count": 1,
+      "trajectory_length": 26
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "79",
+    "step_index": 18,
+    "assertion_name": "recommended_bottle_variants_match_available_product_data",
+    "check_type": "python_check",
+    "check_time_sec": 0.0012,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 18,
+      "step_index": 19,
+      "function_name": "recommended_bottle_variants_match_available_product_data",
+      "matched_substeps_count": 1,
+      "trajectory_length": 26
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "79",
+    "step_index": 20,
+    "assertion_name": "verify_replacement_price_difference_refund",
+    "check_type": "python_check",
+    "check_time_sec": 0.0008,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 20,
+      "step_index": 21,
+      "function_name": "verify_replacement_price_difference_refund",
+      "matched_substeps_count": 1,
+      "trajectory_length": 26
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "79",
+    "step_index": 23,
+    "assertion_name": "modified_order_reflects_requested_item_and_refund",
+    "check_type": "python_check",
+    "check_time_sec": 0.001,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 23,
+      "step_index": 24,
+      "function_name": "modified_order_reflects_requested_item_and_refund",
+      "matched_substeps_count": 1,
+      "trajectory_length": 26
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  }
+]

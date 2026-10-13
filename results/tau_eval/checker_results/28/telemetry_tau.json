@@ -1,0 +1,199 @@
+[
+  {
+    "task_id": "28",
+    "step_index": 11,
+    "assertion_name": "order_item_prices_match_payment_total",
+    "check_type": "python_check",
+    "check_time_sec": 0.0003,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: name 'next' is not defined Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 10, in order_item_prices_match_payment_total\nNameError: name 'next' is not defined\n",
+    "check_input": {
+      "step_pos": 11,
+      "step_index": 11,
+      "trajectory_length": 42
+    },
+    "check_output": null
+  },
+  {
+    "task_id": "28",
+    "step_index": 13,
+    "assertion_name": "order_item_prices_match_payment_total",
+    "check_type": "python_check",
+    "check_time_sec": 0.0004,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: name 'next' is not defined Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 10, in order_item_prices_match_payment_total\nNameError: name 'next' is not defined\n",
+    "check_input": {
+      "step_pos": 13,
+      "step_index": 13,
+      "trajectory_length": 42
+    },
+    "check_output": null
+  },
+  {
+    "task_id": "28",
+    "step_index": 15,
+    "assertion_name": "order_item_prices_match_payment_total",
+    "check_type": "python_check",
+    "check_time_sec": 0.0003,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: name 'next' is not defined Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 10, in order_item_prices_match_payment_total\nNameError: name 'next' is not defined\n",
+    "check_input": {
+      "step_pos": 15,
+      "step_index": 15,
+      "trajectory_length": 42
+    },
+    "check_output": null
+  },
+  {
+    "task_id": "28",
+    "step_index": 17,
+    "assertion_name": "order_item_prices_match_payment_total",
+    "check_type": "python_check",
+    "check_time_sec": 0.0003,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: name 'next' is not defined Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 10, in order_item_prices_match_payment_total\nNameError: name 'next' is not defined\n",
+    "check_input": {
+      "step_pos": 17,
+      "step_index": 17,
+      "trajectory_length": 42
+    },
+    "check_output": null
+  },
+  {
+    "task_id": "28",
+    "step_index": 23,
+    "assertion_name": "order_item_prices_match_payment_total",
+    "check_type": "python_check",
+    "check_time_sec": 0.0002,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: name 'next' is not defined Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 10, in order_item_prices_match_payment_total\nNameError: name 'next' is not defined\n",
+    "check_input": {
+      "step_pos": 23,
+      "step_index": 23,
+      "trajectory_length": 42
+    },
+    "check_output": null
+  },
+  {
+    "task_id": "28",
+    "step_index": 25,
+    "assertion_name": "order_item_prices_match_payment_total",
+    "check_type": "python_check",
+    "check_time_sec": 0.0003,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: name 'next' is not defined Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 10, in order_item_prices_match_payment_total\nNameError: name 'next' is not defined\n",
+    "check_input": {
+      "step_pos": 25,
+      "step_index": 25,
+      "trajectory_length": 42
+    },
+    "check_output": null
+  },
+  {
+    "task_id": "28",
+    "step_index": 27,
+    "assertion_name": "order_item_prices_match_payment_total",
+    "check_type": "python_check",
+    "check_time_sec": 0.0002,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: name 'next' is not defined Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 10, in order_item_prices_match_payment_total\nNameError: name 'next' is not defined\n",
+    "check_input": {
+      "step_pos": 27,
+      "step_index": 27,
+      "trajectory_length": 42
+    },
+    "check_output": null
+  },
+  {
+    "task_id": "28",
+    "step_index": 30,
+    "assertion_name": "cancellation_offer_must_be_for_entire_order",
+    "check_type": "python_check",
+    "check_time_sec": 0.0004,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 30,
+      "step_index": 31,
+      "function_name": "cancellation_offer_must_be_for_entire_order",
+      "matched_substeps_count": 1,
+      "trajectory_length": 42
+    },
+    "check_output": {
+      "result": false,
+      "violated": true
+    }
+  },
+  {
+    "task_id": "28",
+    "step_index": 33,
+    "assertion_name": "cancellation_refund_matches_requested_hose_only",
+    "check_type": "python_check",
+    "check_time_sec": 0.0003,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: name 'next' is not defined Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 7, in cancellation_refund_matches_requested_hose_only\nNameError: name 'next' is not defined\n",
+    "check_input": {
+      "step_pos": 33,
+      "step_index": 33,
+      "trajectory_length": 42
+    },
+    "check_output": null
+  },
+  {
+    "task_id": "28",
+    "step_index": 34,
+    "assertion_name": "final_response_reports_total_potential_refund",
+    "check_type": "python_check",
+    "check_time_sec": 0.0004,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: Import of 'decimal' is not allowed in invariant checks Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 5, in final_response_reports_total_potential_refund\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 623, in _safe_import\n    raise ImportError(f\"Import of '{name}' is not allowed in invariant checks\")\nImportError: Import of 'decimal' is not allowed in invariant checks\n",
+    "check_input": {
+      "step_pos": 34,
+      "step_index": 34,
+      "trajectory_length": 42
+    },
+    "check_output": null
+  },
+  {
+    "task_id": "28",
+    "step_index": 38,
+    "assertion_name": "refund_calculation_matches_return_and_cancellation_results",
+    "check_type": "python_check",
+    "check_time_sec": 0.0006,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: Import of 'ast' is not allowed in invariant checks Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 3, in refund_calculation_matches_return_and_cancellation_results\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 623, in _safe_import\n    raise ImportError(f\"Import of '{name}' is not allowed in invariant checks\")\nImportError: Import of 'ast' is not allowed in invariant checks\n",
+    "check_input": {
+      "step_pos": 38,
+      "step_index": 38,
+      "trajectory_length": 42
+    },
+    "check_output": null
+  },
+  {
+    "task_id": "28",
+    "step_index": 40,
+    "assertion_name": "final_response_reports_total_potential_refund",
+    "check_type": "python_check",
+    "check_time_sec": 0.0004,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: Import of 'decimal' is not allowed in invariant checks Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 5, in final_response_reports_total_potential_refund\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 623, in _safe_import\n    raise ImportError(f\"Import of '{name}' is not allowed in invariant checks\")\nImportError: Import of 'decimal' is not allowed in invariant checks\n",
+    "check_input": {
+      "step_pos": 40,
+      "step_index": 40,
+      "trajectory_length": 42
+    },
+    "check_output": null
+  }
+]

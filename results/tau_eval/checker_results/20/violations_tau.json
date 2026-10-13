@@ -1,0 +1,56 @@
+[
+  {
+    "task_id": "20",
+    "step_index": 41,
+    "assertion_name": "proposed_upgrades_use_max_available_price",
+    "invariant_type": "RELATIONAL_POST",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "For each product-details tool result seen so far, compute the maximum price among available variants (Running Shoes restricted to size 9). Verify the assistant's upgrade plan in the immediately preceding step lists that maximum price for the product.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "user",
+          "content": "Yes, go ahead with the upgrades. Can you use my gift card for the cost difference?"
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "user",
+        "content": "Yes, go ahead with the upgrades. Can you use my gift card for the cost difference?"
+      }
+    },
+    "taxonomy_targets": [
+      "MisinterpretationOfToolOutput",
+      "Instruction/PlanAdherenceFailure"
+    ]
+  },
+  {
+    "task_id": "20",
+    "step_index": 48,
+    "assertion_name": "gift_card_has_sufficient_balance_for_exchange_or_modification",
+    "invariant_type": "RELATIONAL_POST",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "When the current assistant step calls exchange_delivered_order_items or modify_pending_order_items using a gift card payment method, calculate the price difference between the new items and original items. Retrieve original item prices from prior order details and replacement item prices from prior product details. If the total replacement cost exceeds the original items cost, retrieve the gift card balance from earlier user details. Verify that the gift card balance is greater than or equal to the required price difference.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "assistant",
+          "content": "[\n  {\n    \"function\": {\n      \"arguments\": \"{\\\"order_id\\\": \\\"#W4967593\\\", \\\"item_ids\\\": [\\\"4168944673\\\", \\\"3320557165\\\", \\\"8054888773\\\", \\\"1355937109\\\"], \\\"new_item_ids\\\": [\\\"4274709903\\\", \\\"8798690242\\\", \\\"8084436579\\\", \\\"4510078629\\\"], \\\"payment_method_id\\\": \\\"gift_card_4332117\\\"}\",\n      \"name\": \"exchange_delivered_order_items\"\n    },\n    \"id\": \"call_Vw65NuYq9BhZeUG4hSK5BqUF\",\n    \"type\": \"function\"\n  }\n]"
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "assistant",
+        "content": "[\n  {\n    \"function\": {\n      \"arguments\": \"{\\\"order_id\\\": \\\"#W4967593\\\", \\\"item_ids\\\": [\\\"4168944673\\\", \\\"3320557165\\\", \\\"8054888773\\\", \\\"1355937109\\\"], \\\"new_item_ids\\\": [\\\"4274709903\\\", \\\"8798690242\\\", \\\"8084436579\\\", \\\"4510078629\\\"], \\\"payment_method_id\\\": \\\"gift_card_4332117\\\"}\",\n      \"name\": \"exchange_delivered_order_items\"\n    },\n    \"id\": \"call_Vw65NuYq9BhZeUG4hSK5BqUF\",\n    \"type\": \"function\"\n  }\n]"
+      }
+    },
+    "taxonomy_targets": [
+      "Instruction/PlanAdherenceFailure",
+      "MisinterpretationOfToolOutput"
+    ]
+  }
+]

@@ -1,0 +1,212 @@
+[
+  {
+    "task_id": "32",
+    "step_index": 14,
+    "assertion_name": "order_lookup_targets_authenticated_users_order",
+    "check_type": "python_check",
+    "check_time_sec": 0.0006,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 14,
+      "step_index": 15,
+      "function_name": "order_lookup_targets_authenticated_users_order",
+      "matched_substeps_count": 1,
+      "trajectory_length": 42
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "32",
+    "step_index": 18,
+    "assertion_name": "order_lookup_targets_authenticated_users_order",
+    "check_type": "python_check",
+    "check_time_sec": 0.0006,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 18,
+      "step_index": 19,
+      "function_name": "order_lookup_targets_authenticated_users_order",
+      "matched_substeps_count": 1,
+      "trajectory_length": 42
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "32",
+    "step_index": 21,
+    "assertion_name": "validate_order_result_id_and_payment_total",
+    "check_type": "python_check",
+    "check_time_sec": 0.0008,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 21,
+      "step_index": 22,
+      "function_name": "validate_order_result_id_and_payment_total",
+      "matched_substeps_count": 1,
+      "trajectory_length": 42
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "32",
+    "step_index": 25,
+    "assertion_name": "cancellation_refund_matches_payment_total",
+    "check_type": "python_check",
+    "check_time_sec": 0.0007,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 25,
+      "step_index": 26,
+      "function_name": "cancellation_refund_matches_payment_total",
+      "matched_substeps_count": 1,
+      "trajectory_length": 42
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "32",
+    "step_index": 31,
+    "assertion_name": "cancellation_refund_matches_payment_total",
+    "check_type": "python_check",
+    "check_time_sec": 0.0008,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 31,
+      "step_index": 32,
+      "function_name": "cancellation_refund_matches_payment_total",
+      "matched_substeps_count": 1,
+      "trajectory_length": 42
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "32",
+    "step_index": 32,
+    "assertion_name": "assistant_refund_amount_matches_cancellation_result",
+    "check_type": "python_check",
+    "check_time_sec": 0.0007,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 32,
+      "step_index": 33,
+      "function_name": "assistant_refund_amount_matches_cancellation_result",
+      "matched_substeps_count": 1,
+      "trajectory_length": 42
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "32",
+    "step_index": 34,
+    "assertion_name": "order_lookup_targets_authenticated_users_order",
+    "check_type": "python_check",
+    "check_time_sec": 0.0005,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 34,
+      "step_index": 35,
+      "function_name": "order_lookup_targets_authenticated_users_order",
+      "matched_substeps_count": 1,
+      "trajectory_length": 42
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "32",
+    "step_index": 35,
+    "assertion_name": "validate_order_result_id_and_payment_total",
+    "check_type": "python_check",
+    "check_time_sec": 0.0007,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 35,
+      "step_index": 36,
+      "function_name": "validate_order_result_id_and_payment_total",
+      "matched_substeps_count": 1,
+      "trajectory_length": 42
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "32",
+    "step_index": 39,
+    "assertion_name": "return_result_matches_requested_items_and_refund_method",
+    "check_type": "python_check",
+    "check_time_sec": 0.0005,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 39,
+      "step_index": 40,
+      "function_name": "return_result_matches_requested_items_and_refund_method",
+      "matched_substeps_count": 1,
+      "trajectory_length": 42
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "32",
+    "step_index": 40,
+    "assertion_name": "assistant_return_refund_matches_returned_items_total",
+    "check_type": "python_check",
+    "check_time_sec": 0.0005,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 40,
+      "step_index": 41,
+      "function_name": "assistant_return_refund_matches_returned_items_total",
+      "matched_substeps_count": 1,
+      "trajectory_length": 42
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  }
+]

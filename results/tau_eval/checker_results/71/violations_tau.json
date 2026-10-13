@@ -1,0 +1,137 @@
+[
+  {
+    "task_id": "71",
+    "step_index": 14,
+    "assertion_name": "listed_order_ids_match_user_details",
+    "invariant_type": "PROVENANCE",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "Find the most recent prior tool result that is a JSON object with an 'orders' list (get_user_details output). Extract all order IDs matching #W\\d+ from the current assistant message. Every listed order ID must appear in the tool's orders list, and every order in that list must be mentioned in the message.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "assistant",
+          "content": "[\n  {\n    \"function\": {\n      \"arguments\": \"{\\\"order_id\\\": \\\"#W5270061\\\"}\",\n      \"name\": \"get_order_details\"\n    },\n    \"id\": \"call_ziDgkMUbA4QfQ5UbrLxdxBqI\",\n    \"type\": \"function\"\n  }\n]"
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "assistant",
+        "content": "[\n  {\n    \"function\": {\n      \"arguments\": \"{\\\"order_id\\\": \\\"#W5270061\\\"}\",\n      \"name\": \"get_order_details\"\n    },\n    \"id\": \"call_ziDgkMUbA4QfQ5UbrLxdxBqI\",\n    \"type\": \"function\"\n  }\n]"
+      }
+    },
+    "taxonomy_targets": [
+      "InventionOfNewInformation",
+      "MisinterpretationOfToolOutput"
+    ]
+  },
+  {
+    "task_id": "71",
+    "step_index": 16,
+    "assertion_name": "listed_order_ids_match_user_details",
+    "invariant_type": "PROVENANCE",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "Find the most recent prior tool result that is a JSON object with an 'orders' list (get_user_details output). Extract all order IDs matching #W\\d+ from the current assistant message. Every listed order ID must appear in the tool's orders list, and every order in that list must be mentioned in the message.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "assistant",
+          "content": "I\u2019ve found the order that includes the desk lamp and backpack! Here are the details:\n\n- **Order ID:** #W5270061\n- **Current Shipping Address:**  \n  584 Sunset Drive, Suite 270, Washington, DC, 20353, USA\n- **Items in the Order:**  \n  1. Backpack (Navy, Small, Nylon, Laptop Compartment) - $201.95  \n  2. Indoor Security Camera (4K, 130\u00b0 Field of View, Wi-Fi) - $274.98  \n  3. Desk Lamp (Silver, Low Brightness, Battery Powered) - $150.01  \n- **Order Status:** Pending  \n- **Payment Method:** Gift Card  \n\nWould you like me to update the shipping address to your default address:  \n159 Hickory Lane, Suite 995, Charlotte, NC, 28243, USA?"
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "assistant",
+        "content": "I\u2019ve found the order that includes the desk lamp and backpack! Here are the details:\n\n- **Order ID:** #W5270061\n- **Current Shipping Address:**  \n  584 Sunset Drive, Suite 270, Washington, DC, 20353, USA\n- **Items in the Order:**  \n  1. Backpack (Navy, Small, Nylon, Laptop Compartment) - $201.95  \n  2. Indoor Security Camera (4K, 130\u00b0 Field of View, Wi-Fi) - $274.98  \n  3. Desk Lamp (Silver, Low Brightness, Battery Powered) - $150.01  \n- **Order Status:** Pending  \n- **Payment Method:** Gift Card  \n\nWould you like me to update the shipping address to your default address:  \n159 Hickory Lane, Suite 995, Charlotte, NC, 28243, USA?"
+      }
+    },
+    "taxonomy_targets": [
+      "InventionOfNewInformation",
+      "MisinterpretationOfToolOutput"
+    ]
+  },
+  {
+    "task_id": "71",
+    "step_index": 24,
+    "assertion_name": "listed_order_ids_match_user_details",
+    "invariant_type": "PROVENANCE",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "Find the most recent prior tool result that is a JSON object with an 'orders' list (get_user_details output). Extract all order IDs matching #W\\d+ from the current assistant message. Every listed order ID must appear in the tool's orders list, and every order in that list must be mentioned in the message.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "assistant",
+          "content": "[\n  {\n    \"function\": {\n      \"arguments\": \"{\\\"order_id\\\": \\\"#W5270061\\\", \\\"address1\\\": \\\"159 Hickory Lane\\\", \\\"address2\\\": \\\"Suite 995\\\", \\\"city\\\": \\\"Charlotte\\\", \\\"state\\\": \\\"NC\\\", \\\"country\\\": \\\"USA\\\", \\\"zip\\\": \\\"28243\\\"}\",\n      \"name\": \"modify_pending_order_address\"\n    },\n    \"id\": \"call_uj9lqFbrAZhDCXvV5IJnqhxo\",\n    \"type\": \"function\"\n  }\n]"
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "assistant",
+        "content": "[\n  {\n    \"function\": {\n      \"arguments\": \"{\\\"order_id\\\": \\\"#W5270061\\\", \\\"address1\\\": \\\"159 Hickory Lane\\\", \\\"address2\\\": \\\"Suite 995\\\", \\\"city\\\": \\\"Charlotte\\\", \\\"state\\\": \\\"NC\\\", \\\"country\\\": \\\"USA\\\", \\\"zip\\\": \\\"28243\\\"}\",\n      \"name\": \"modify_pending_order_address\"\n    },\n    \"id\": \"call_uj9lqFbrAZhDCXvV5IJnqhxo\",\n    \"type\": \"function\"\n  }\n]"
+      }
+    },
+    "taxonomy_targets": [
+      "InventionOfNewInformation",
+      "MisinterpretationOfToolOutput"
+    ]
+  },
+  {
+    "task_id": "71",
+    "step_index": 26,
+    "assertion_name": "listed_order_ids_match_user_details",
+    "invariant_type": "PROVENANCE",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "Find the most recent prior tool result that is a JSON object with an 'orders' list (get_user_details output). Extract all order IDs matching #W\\d+ from the current assistant message. Every listed order ID must appear in the tool's orders list, and every order in that list must be mentioned in the message.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "assistant",
+          "content": "[\n  {\n    \"function\": {\n      \"arguments\": \"{\\\"order_id\\\":\\\"#W5270061\\\",\\\"item_ids\\\":[\\\"7453605304\\\"],\\\"new_item_ids\\\":[\\\"5320792178\\\"],\\\"payment_method_id\\\":\\\"gift_card_1711656\\\"}\",\n      \"name\": \"modify_pending_order_items\"\n    },\n    \"id\": \"call_xg02kljhndlLb3lc35WWY9f0\",\n    \"type\": \"function\"\n  }\n]"
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "assistant",
+        "content": "[\n  {\n    \"function\": {\n      \"arguments\": \"{\\\"order_id\\\":\\\"#W5270061\\\",\\\"item_ids\\\":[\\\"7453605304\\\"],\\\"new_item_ids\\\":[\\\"5320792178\\\"],\\\"payment_method_id\\\":\\\"gift_card_1711656\\\"}\",\n      \"name\": \"modify_pending_order_items\"\n    },\n    \"id\": \"call_xg02kljhndlLb3lc35WWY9f0\",\n    \"type\": \"function\"\n  }\n]"
+      }
+    },
+    "taxonomy_targets": [
+      "InventionOfNewInformation",
+      "MisinterpretationOfToolOutput"
+    ]
+  },
+  {
+    "task_id": "71",
+    "step_index": 32,
+    "assertion_name": "backpack_offer_matches_variant_and_order_still_modifiable",
+    "invariant_type": "RELATIONAL_POST",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "For the current assistant message that offers a backpack modification, extract the quoted dollar price and verify it equals the price of the available grey/medium/polyester variant in the latest get_product_details result. Also verify the latest order-details result's status is exactly 'pending', since an order whose items were already modified cannot be modified again. Fail if the price does not match or the status is not 'pending'.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "assistant",
+          "content": "The backpack is available in **Grey, Medium Size, Polyester** with a laptop compartment for $212.79. Would you like me to proceed with this modification?"
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "assistant",
+        "content": "The backpack is available in **Grey, Medium Size, Polyester** with a laptop compartment for $212.79. Would you like me to proceed with this modification?"
+      }
+    },
+    "taxonomy_targets": [
+      "MisinterpretationOfToolOutput",
+      "Instruction/PlanAdherenceFailure"
+    ]
+  }
+]

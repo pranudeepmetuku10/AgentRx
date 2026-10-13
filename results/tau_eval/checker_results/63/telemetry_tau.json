@@ -1,0 +1,44 @@
+[
+  {
+    "task_id": "63",
+    "step_index": 28,
+    "assertion_name": "report_all_available_speakers_under_price_limit",
+    "check_type": "python_check",
+    "check_time_sec": 0.0006,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 28,
+      "step_index": 29,
+      "function_name": "report_all_available_speakers_under_price_limit",
+      "matched_substeps_count": 1,
+      "trajectory_length": 36
+    },
+    "check_output": {
+      "result": false,
+      "violated": true
+    }
+  },
+  {
+    "task_id": "63",
+    "step_index": 34,
+    "assertion_name": "confirm_order_total_price_matches_order_details",
+    "check_type": "python_check",
+    "check_time_sec": 0.0006,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 34,
+      "step_index": 35,
+      "function_name": "confirm_order_total_price_matches_order_details",
+      "matched_substeps_count": 1,
+      "trajectory_length": 36
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  }
+]

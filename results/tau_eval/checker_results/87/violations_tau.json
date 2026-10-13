@@ -1,0 +1,55 @@
+[
+  {
+    "task_id": "87",
+    "step_index": 9,
+    "assertion_name": "user_details_email_matches_task_identity",
+    "invariant_type": "PROVENANCE",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "Verify that the current step's user-details tool result contains an email matching the email specified in the task instruction. This checks that the retrieved profile belongs to the requested user; fail if the instruction email or result email is missing, the result is not parseable JSON, or the emails differ.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "tool",
+          "content": "{\n  \"name\": {\n    \"first_name\": \"Yusuf\",\n    \"last_name\": \"Hernandez\"\n  },\n  \"address\": {\n    \"address1\": \"580 Broadway\",\n    \"address2\": \"Suite 162\",\n    \"city\": \"Denver\",\n    \"country\": \"USA\",\n    \"state\": \"CO\",\n    \"zip\": \"80265\"\n  },\n  \"email\": \"yusuf.hernandez8836@example.com\",\n  \"payment_methods\": {\n    \"paypal_7529813\": {\n      \"source\": \"paypal\",\n      \"id\": \"paypal_7529813\"\n    }\n  },\n  \"orders\": [\n    \"#W2166301\",\n    \"#W2466703\",\n    \"#W6832752\",\n    \"#W7739115\",\n    \"#W1994898\"\n  ]\n}"
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "tool",
+        "content": "{\n  \"name\": {\n    \"first_name\": \"Yusuf\",\n    \"last_name\": \"Hernandez\"\n  },\n  \"address\": {\n    \"address1\": \"580 Broadway\",\n    \"address2\": \"Suite 162\",\n    \"city\": \"Denver\",\n    \"country\": \"USA\",\n    \"state\": \"CO\",\n    \"zip\": \"80265\"\n  },\n  \"email\": \"yusuf.hernandez8836@example.com\",\n  \"payment_methods\": {\n    \"paypal_7529813\": {\n      \"source\": \"paypal\",\n      \"id\": \"paypal_7529813\"\n    }\n  },\n  \"orders\": [\n    \"#W2166301\",\n    \"#W2466703\",\n    \"#W6832752\",\n    \"#W7739115\",\n    \"#W1994898\"\n  ]\n}"
+      }
+    },
+    "taxonomy_targets": [
+      "MisinterpretationOfToolOutput"
+    ]
+  },
+  {
+    "task_id": "87",
+    "step_index": 20,
+    "assertion_name": "inspect_all_listed_orders_before_ruling_out_address",
+    "invariant_type": "PROVENANCE",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "Before concluding that the Washington DC address cannot be found among the user's orders, verify that get_order_details was called for every order ID in the user's get_user_details result. Return False if any listed order has not been checked.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "assistant",
+          "content": "I couldn't find an address from Washington DC in the retrieved orders or your default address. Could you clarify if this address is associated with another order, or provide more details about the address you'd like to use?"
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "assistant",
+        "content": "I couldn't find an address from Washington DC in the retrieved orders or your default address. Could you clarify if this address is associated with another order, or provide more details about the address you'd like to use?"
+      }
+    },
+    "taxonomy_targets": [
+      "Instruction/PlanAdherenceFailure",
+      "MisinterpretationOfToolOutput"
+    ]
+  }
+]

@@ -1,0 +1,291 @@
+[
+  {
+    "task_id": "2",
+    "step_index": 3,
+    "assertion_name": "verify_product_type_count",
+    "check_type": "python_check",
+    "check_time_sec": 0.0005,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 3,
+      "step_index": 4,
+      "function_name": "verify_product_type_count",
+      "matched_substeps_count": 1,
+      "trajectory_length": 32
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "2",
+    "step_index": 4,
+    "assertion_name": "product_lookup_uses_tshirt_catalog_id",
+    "check_type": "python_check",
+    "check_time_sec": 0.0004,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 4,
+      "step_index": 5,
+      "function_name": "product_lookup_uses_tshirt_catalog_id",
+      "matched_substeps_count": 1,
+      "trajectory_length": 32
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "2",
+    "step_index": 5,
+    "assertion_name": "count_available_tshirt_options",
+    "check_type": "python_check",
+    "check_time_sec": 0.0002,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 5,
+      "step_index": 6,
+      "function_name": "count_available_tshirt_options",
+      "matched_substeps_count": 1,
+      "trajectory_length": 32
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "2",
+    "step_index": 6,
+    "assertion_name": "verify_reported_tshirt_availability_count",
+    "check_type": "python_check",
+    "check_time_sec": 0.0007,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 6,
+      "step_index": 7,
+      "function_name": "verify_reported_tshirt_availability_count",
+      "matched_substeps_count": 1,
+      "trajectory_length": 32
+    },
+    "check_output": {
+      "result": false,
+      "violated": true
+    }
+  },
+  {
+    "task_id": "2",
+    "step_index": 10,
+    "assertion_name": "authenticate_with_user_provided_name_and_zip",
+    "check_type": "python_check",
+    "check_time_sec": 0.0009,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 10,
+      "step_index": 11,
+      "function_name": "authenticate_with_user_provided_name_and_zip",
+      "matched_substeps_count": 1,
+      "trajectory_length": 32
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "2",
+    "step_index": 13,
+    "assertion_name": "verify_user_profile_matches_authenticated_identity",
+    "check_type": "python_check",
+    "check_time_sec": 0.0004,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: name 'next' is not defined Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 8, in verify_user_profile_matches_authenticated_identity\nNameError: name 'next' is not defined\n",
+    "check_input": {
+      "step_pos": 13,
+      "step_index": 13,
+      "trajectory_length": 32
+    },
+    "check_output": null
+  },
+  {
+    "task_id": "2",
+    "step_index": 18,
+    "assertion_name": "verify_order_lookup_uses_authenticated_users_order",
+    "check_type": "python_check",
+    "check_time_sec": 0.0007,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 18,
+      "step_index": 19,
+      "function_name": "verify_order_lookup_uses_authenticated_users_order",
+      "matched_substeps_count": 1,
+      "trajectory_length": 32
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "2",
+    "step_index": 21,
+    "assertion_name": "verify_order_result_matches_call_and_authenticated_user",
+    "check_type": "python_check",
+    "check_time_sec": 0.0006,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 21,
+      "step_index": 22,
+      "function_name": "verify_order_result_matches_call_and_authenticated_user",
+      "matched_substeps_count": 1,
+      "trajectory_length": 32
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "2",
+    "step_index": 22,
+    "assertion_name": "verify_current_order_lookup_uses_authenticated_users_order",
+    "check_type": "python_check",
+    "check_time_sec": 0.0003,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 22,
+      "step_index": 23,
+      "function_name": "verify_current_order_lookup_uses_authenticated_users_order",
+      "matched_substeps_count": 1,
+      "trajectory_length": 32
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "2",
+    "step_index": 23,
+    "assertion_name": "verify_current_order_result_matches_call_and_authenticated_user",
+    "check_type": "python_check",
+    "check_time_sec": 0.0005,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 23,
+      "step_index": 24,
+      "function_name": "verify_current_order_result_matches_call_and_authenticated_user",
+      "matched_substeps_count": 1,
+      "trajectory_length": 32
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "2",
+    "step_index": 24,
+    "assertion_name": "verify_current_order_lookup_uses_authenticated_users_order",
+    "check_type": "python_check",
+    "check_time_sec": 0.0004,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 24,
+      "step_index": 25,
+      "function_name": "verify_current_order_lookup_uses_authenticated_users_order",
+      "matched_substeps_count": 1,
+      "trajectory_length": 32
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "2",
+    "step_index": 25,
+    "assertion_name": "verify_order_contains_requested_return_items",
+    "check_type": "python_check",
+    "check_time_sec": 0.0003,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 25,
+      "step_index": 26,
+      "function_name": "verify_order_contains_requested_return_items",
+      "matched_substeps_count": 1,
+      "trajectory_length": 32
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "2",
+    "step_index": 28,
+    "assertion_name": "verify_return_call_matches_order_items_and_payment",
+    "check_type": "python_check",
+    "check_time_sec": 0.0006,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 28,
+      "step_index": 29,
+      "function_name": "verify_return_call_matches_order_items_and_payment",
+      "matched_substeps_count": 1,
+      "trajectory_length": 32
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "2",
+    "step_index": 29,
+    "assertion_name": "verify_return_result_matches_requested_items_and_payment",
+    "check_type": "python_check",
+    "check_time_sec": 0.0006,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 29,
+      "step_index": 30,
+      "function_name": "verify_return_result_matches_requested_items_and_payment",
+      "matched_substeps_count": 1,
+      "trajectory_length": 32
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  }
+]

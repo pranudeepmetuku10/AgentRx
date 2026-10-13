@@ -1,0 +1,28 @@
+[
+  {
+    "task_id": "63",
+    "step_index": 28,
+    "assertion_name": "report_all_available_speakers_under_price_limit",
+    "invariant_type": "ANY",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "Compare the prices listed in the current assistant response with the prior Bluetooth speaker product-details result. The response must list every available variant priced below $300, and no unavailable or over-limit variants. Fail if the listed prices do not exactly match the eligible variant prices.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "assistant",
+          "content": "Here are the available Bluetooth speaker options priced under $300:\n\n1. **Color: Blue, Battery Life: 20 hours, Water Resistance: No** - Price: $271.89\n2. **Color: Red, Battery Life: 20 hours, Water Resistance: Yes** - Price: $285.94\n3. **Color: Red, Battery Life: 20 hours, Water Resistance: No** - Price: $285.81\n\nLet me know if you'd like to modify your order to include one of these options!"
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "assistant",
+        "content": "Here are the available Bluetooth speaker options priced under $300:\n\n1. **Color: Blue, Battery Life: 20 hours, Water Resistance: No** - Price: $271.89\n2. **Color: Red, Battery Life: 20 hours, Water Resistance: Yes** - Price: $285.94\n3. **Color: Red, Battery Life: 20 hours, Water Resistance: No** - Price: $285.81\n\nLet me know if you'd like to modify your order to include one of these options!"
+      }
+    },
+    "taxonomy_targets": [
+      "MisinterpretationOfToolOutput"
+    ]
+  }
+]

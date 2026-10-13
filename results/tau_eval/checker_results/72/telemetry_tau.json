@@ -1,0 +1,202 @@
+[
+  {
+    "task_id": "72",
+    "step_index": 1,
+    "assertion_name": "mention_modification_before_address_in_initial_request",
+    "check_type": "python_check",
+    "check_time_sec": 0.0002,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 1,
+      "step_index": 2,
+      "function_name": "mention_modification_before_address_in_initial_request",
+      "matched_substeps_count": 1,
+      "trajectory_length": 28
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "72",
+    "step_index": 7,
+    "assertion_name": "verify_profile_matches_authenticated_identity",
+    "check_type": "python_check",
+    "check_time_sec": 0.0003,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 7,
+      "step_index": 8,
+      "function_name": "verify_profile_matches_authenticated_identity",
+      "matched_substeps_count": 1,
+      "trajectory_length": 28
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "72",
+    "step_index": 11,
+    "assertion_name": "order_payment_total_matches_items_sum",
+    "check_type": "python_check",
+    "check_time_sec": 0.0004,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 11,
+      "step_index": 12,
+      "function_name": "order_payment_total_matches_items_sum",
+      "matched_substeps_count": 1,
+      "trajectory_length": 28
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "72",
+    "step_index": 14,
+    "assertion_name": "product_lookup_matches_order_item",
+    "check_type": "python_check",
+    "check_time_sec": 0.0004,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 14,
+      "step_index": 15,
+      "function_name": "product_lookup_matches_order_item",
+      "matched_substeps_count": 1,
+      "trajectory_length": 28
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "72",
+    "step_index": 15,
+    "assertion_name": "backpack_requested_options_have_available_variant",
+    "check_type": "python_check",
+    "check_time_sec": 0.0004,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 15,
+      "step_index": 16,
+      "function_name": "backpack_requested_options_have_available_variant",
+      "matched_substeps_count": 1,
+      "trajectory_length": 28
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "72",
+    "step_index": 16,
+    "assertion_name": "product_lookup_matches_order_item",
+    "check_type": "python_check",
+    "check_time_sec": 0.032,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 16,
+      "step_index": 17,
+      "function_name": "product_lookup_matches_order_item",
+      "matched_substeps_count": 1,
+      "trajectory_length": 28
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "72",
+    "step_index": 17,
+    "assertion_name": "desk_lamp_requested_options_have_available_variant",
+    "check_type": "python_check",
+    "check_time_sec": 0.0004,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 17,
+      "step_index": 18,
+      "function_name": "desk_lamp_requested_options_have_available_variant",
+      "matched_substeps_count": 1,
+      "trajectory_length": 28
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "72",
+    "step_index": 18,
+    "assertion_name": "selected_variants_preserve_unspecified_item_options",
+    "check_type": "python_check",
+    "check_time_sec": 0.0009,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: unhashable type: 'dict' Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 44, in selected_variants_preserve_unspecified_item_options\nTypeError: unhashable type: 'dict'\n",
+    "check_input": {
+      "step_pos": 18,
+      "step_index": 18,
+      "trajectory_length": 28
+    },
+    "check_output": null
+  },
+  {
+    "task_id": "72",
+    "step_index": 20,
+    "assertion_name": "gift_card_covers_positive_item_price_difference",
+    "check_type": "python_check",
+    "check_time_sec": 0.0008,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: name 'next' is not defined Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 40, in gift_card_covers_positive_item_price_difference\nNameError: name 'next' is not defined\n",
+    "check_input": {
+      "step_pos": 20,
+      "step_index": 20,
+      "trajectory_length": 28
+    },
+    "check_output": null
+  },
+  {
+    "task_id": "72",
+    "step_index": 21,
+    "assertion_name": "order_payment_total_matches_items_sum",
+    "check_type": "python_check",
+    "check_time_sec": 0.0004,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 21,
+      "step_index": 22,
+      "function_name": "order_payment_total_matches_items_sum",
+      "matched_substeps_count": 1,
+      "trajectory_length": 28
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  }
+]

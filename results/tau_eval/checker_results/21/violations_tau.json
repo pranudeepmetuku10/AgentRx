@@ -1,0 +1,28 @@
+[
+  {
+    "task_id": "21",
+    "step_index": 2,
+    "assertion_name": "avoid_resoliciting_provided_identity_details",
+    "invariant_type": "PROVENANCE",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "When the task instruction already provides Ethan Garcia and zip code 80280, fail if the current assistant message asks the user to provide identity details by requesting an email address or their name and zip code. This checks only for re-soliciting the identity information already present in the instruction.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "assistant",
+          "content": "I can assist you with exchanging the shoes. To get started, I need to authenticate your identity. Could you please provide your email address? Alternatively, you can provide your first name, last name, and zip code."
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "assistant",
+        "content": "I can assist you with exchanging the shoes. To get started, I need to authenticate your identity. Could you please provide your email address? Alternatively, you can provide your first name, last name, and zip code."
+      }
+    },
+    "taxonomy_targets": [
+      "Instruction/PlanAdherenceFailure"
+    ]
+  }
+]

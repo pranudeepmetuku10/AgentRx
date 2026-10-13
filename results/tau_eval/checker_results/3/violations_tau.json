@@ -1,0 +1,28 @@
+[
+  {
+    "task_id": "3",
+    "step_index": 6,
+    "assertion_name": "assistant_available_tshirt_count_matches_tool_result",
+    "invariant_type": "ANY",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "If the assistant states a numerical count of available T-shirt options in the current step, verify that the count equals the number of variants with available exactly true in the most recent earlier T-Shirt product-details tool result. Return False if the stated count does not match.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "assistant",
+          "content": "Currently, there are 11 available T-shirt options in our online store. Each option varies by color, size, material, and style. Let me know if you'd like more details about any specific option!"
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "assistant",
+        "content": "Currently, there are 11 available T-shirt options in our online store. Each option varies by color, size, material, and style. Let me know if you'd like more details about any specific option!"
+      }
+    },
+    "taxonomy_targets": [
+      "MisinterpretationOfToolOutput"
+    ]
+  }
+]

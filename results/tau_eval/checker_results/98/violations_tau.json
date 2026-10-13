@@ -1,0 +1,28 @@
+[
+  {
+    "task_id": "98",
+    "step_index": 1,
+    "assertion_name": "mention_both_requests_exchange_first",
+    "invariant_type": "ANY",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "Check the current user message for both requested actions: exchanging the Bluetooth speaker for the cheapest available green version, and changing the LA order's address to the NYC address from the other order without revealing that address. Both requests must appear in the same message, with the exchange request mentioned first.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "user",
+          "content": "Hi, I need help with two requests regarding my orders. First, I'd like to exchange my Bluetooth speaker for the cheapest green version available."
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "user",
+        "content": "Hi, I need help with two requests regarding my orders. First, I'd like to exchange my Bluetooth speaker for the cheapest green version available."
+      }
+    },
+    "taxonomy_targets": [
+      "Instruction/PlanAdherenceFailure"
+    ]
+  }
+]

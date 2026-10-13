@@ -1,0 +1,134 @@
+[
+  {
+    "task_id": "3",
+    "step_index": 4,
+    "assertion_name": "use_tshirt_product_id_from_product_type_lookup",
+    "check_type": "python_check",
+    "check_time_sec": 0.0007,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 4,
+      "step_index": 5,
+      "function_name": "use_tshirt_product_id_from_product_type_lookup",
+      "matched_substeps_count": 1,
+      "trajectory_length": 34
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "3",
+    "step_index": 5,
+    "assertion_name": "count_available_tshirt_variants",
+    "check_type": "python_check",
+    "check_time_sec": 0.0004,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 5,
+      "step_index": 6,
+      "function_name": "count_available_tshirt_variants",
+      "matched_substeps_count": 1,
+      "trajectory_length": 34
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "3",
+    "step_index": 6,
+    "assertion_name": "assistant_available_tshirt_count_matches_tool_result",
+    "check_type": "python_check",
+    "check_time_sec": 0.0008,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 6,
+      "step_index": 7,
+      "function_name": "assistant_available_tshirt_count_matches_tool_result",
+      "matched_substeps_count": 1,
+      "trajectory_length": 34
+    },
+    "check_output": {
+      "result": false,
+      "violated": true
+    }
+  },
+  {
+    "task_id": "3",
+    "step_index": 26,
+    "assertion_name": "use_pending_tshirt_product_id_for_variant_lookup",
+    "check_type": "python_check",
+    "check_time_sec": 0.0005,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: name 'next' is not defined Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 34, in use_pending_tshirt_product_id_for_variant_lookup\nNameError: name 'next' is not defined\n",
+    "check_input": {
+      "step_pos": 26,
+      "step_index": 26,
+      "trajectory_length": 34
+    },
+    "check_output": null
+  },
+  {
+    "task_id": "3",
+    "step_index": 28,
+    "assertion_name": "verify_tshirt_option_price_and_difference",
+    "check_type": "python_check",
+    "check_time_sec": 0.001,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: name 'next' is not defined Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 27, in verify_tshirt_option_price_and_difference\nNameError: name 'next' is not defined. Did you mean: 'text'?\n",
+    "check_input": {
+      "step_pos": 28,
+      "step_index": 28,
+      "trajectory_length": 34
+    },
+    "check_output": null
+  },
+  {
+    "task_id": "3",
+    "step_index": 30,
+    "assertion_name": "verify_tshirt_modification_matches_requested_variant",
+    "check_type": "python_check",
+    "check_time_sec": 0.0008,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 30,
+      "step_index": 31,
+      "function_name": "verify_tshirt_modification_matches_requested_variant",
+      "matched_substeps_count": 1,
+      "trajectory_length": 34
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "3",
+    "step_index": 32,
+    "assertion_name": "verify_modified_order_claims_match_tool_result",
+    "check_type": "python_check",
+    "check_time_sec": 0.0006,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: name 'next' is not defined Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 24, in verify_modified_order_claims_match_tool_result\nNameError: name 'next' is not defined. Did you mean: 'text'?\n",
+    "check_input": {
+      "step_pos": 32,
+      "step_index": 32,
+      "trajectory_length": 34
+    },
+    "check_output": null
+  }
+]

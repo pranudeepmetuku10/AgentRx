@@ -1,0 +1,28 @@
+[
+  {
+    "task_id": "55",
+    "step_index": 33,
+    "assertion_name": "return_result_matches_requested_scope",
+    "invariant_type": "RELATIONAL_POST",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "Compare the return tool result in this step with the preceding return_delivered_order_items call. Verify that the returned order ID, return item IDs, and refund payment method match the call arguments exactly.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "tool",
+          "content": "{\n  \"order_id\": \"#W4597054\",\n  \"user_id\": \"amelia_silva_7726\",\n  \"address\": {\n    \"address1\": \"182 Elm Avenue\",\n    \"address2\": \"Suite 875\",\n    \"city\": \"Philadelphia\",\n    \"country\": \"USA\",\n    \"state\": \"PA\",\n    \"zip\": \"19117\"\n  },\n  \"items\": [\n    {\n      \"name\": \"Air Purifier\",\n      \"product_id\": \"3821016478\",\n      \"item_id\": \"5669664287\",\n      \"price\": 543.68,\n      \"options\": {\n        \"room size\": \"small\",\n        \"filter type\": \"ionic\",\n        \"features\": \"quiet operation\"\n      }\n    },\n    {\n      \"name\": \"Smart Watch\",\n      \"product_id\": \"6945232052\",\n      \"item_id\": \"4900990404\",\n      \"price\": 336.71,\n      \"options\": {\n        \"color\": \"silver\",\n        \"band material\": \"metal\",\n        \"display\": \"AMOLED\"\n      }\n    },\n    {\n      \"name\": \"Coffee Maker\",\n      \"product_id\": \"7996920482\",\n      \"item_id\": \"9862136885\",\n      \"price\": 258.32,\n      \"options\": {\n        \"color\": \"black\",\n        \"capacity\": \"2 cups\",\n        \"type\": \"espresso\",\n        \"features\": \"timer\"\n      }\n    },\n    {\n      \"name\": \"Water Bottle\",\n      \"product_id\": \"8310926033\",\n      \"item_id\": \"6777246137\",\n      \"price\": 47.76,\n      \"options\": {\n        \"capacity\": \"750ml\",\n        \"material\": \"stainless steel\",\n        \"color\": \"red\"\n      }\n    }\n  ],\n  \"fulfillments\": [\n    {\n      \"tracking_id\": [\n        \"561724567137\"\n      ],\n      \"item_ids\": [\n        \"5669664287\",\n        \"4900990404\",\n        \"9862136885\",\n        \"6777246137\"\n      ]\n    }\n  ],\n  \"status\": \"return requested\",\n  \"payment_history\": [\n    {\n      \"transaction_type\": \"payment\",\n      \"amount\": 1186.47,\n      \"payment_method_id\": \"gift_card_3491931\"\n    }\n  ],\n  \"return_items\": [\n    \"4900990404\",\n    \"5669664287\",\n    \"9862136885\"\n  ],\n  \"return_payment_method_id\": \"gift_card_3491931\"\n}"
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "tool",
+        "content": "{\n  \"order_id\": \"#W4597054\",\n  \"user_id\": \"amelia_silva_7726\",\n  \"address\": {\n    \"address1\": \"182 Elm Avenue\",\n    \"address2\": \"Suite 875\",\n    \"city\": \"Philadelphia\",\n    \"country\": \"USA\",\n    \"state\": \"PA\",\n    \"zip\": \"19117\"\n  },\n  \"items\": [\n    {\n      \"name\": \"Air Purifier\",\n      \"product_id\": \"3821016478\",\n      \"item_id\": \"5669664287\",\n      \"price\": 543.68,\n      \"options\": {\n        \"room size\": \"small\",\n        \"filter type\": \"ionic\",\n        \"features\": \"quiet operation\"\n      }\n    },\n    {\n      \"name\": \"Smart Watch\",\n      \"product_id\": \"6945232052\",\n      \"item_id\": \"4900990404\",\n      \"price\": 336.71,\n      \"options\": {\n        \"color\": \"silver\",\n        \"band material\": \"metal\",\n        \"display\": \"AMOLED\"\n      }\n    },\n    {\n      \"name\": \"Coffee Maker\",\n      \"product_id\": \"7996920482\",\n      \"item_id\": \"9862136885\",\n      \"price\": 258.32,\n      \"options\": {\n        \"color\": \"black\",\n        \"capacity\": \"2 cups\",\n        \"type\": \"espresso\",\n        \"features\": \"timer\"\n      }\n    },\n    {\n      \"name\": \"Water Bottle\",\n      \"product_id\": \"8310926033\",\n      \"item_id\": \"6777246137\",\n      \"price\": 47.76,\n      \"options\": {\n        \"capacity\": \"750ml\",\n        \"material\": \"stainless steel\",\n        \"color\": \"red\"\n      }\n    }\n  ],\n  \"fulfillments\": [\n    {\n      \"tracking_id\": [\n        \"561724567137\"\n      ],\n      \"item_ids\": [\n        \"5669664287\",\n        \"4900990404\",\n        \"9862136885\",\n        \"6777246137\"\n      ]\n    }\n  ],\n  \"status\": \"return requested\",\n  \"payment_history\": [\n    {\n      \"transaction_type\": \"payment\",\n      \"amount\": 1186.47,\n      \"payment_method_id\": \"gift_card_3491931\"\n    }\n  ],\n  \"return_items\": [\n    \"4900990404\",\n    \"5669664287\",\n    \"9862136885\"\n  ],\n  \"return_payment_method_id\": \"gift_card_3491931\"\n}"
+      }
+    },
+    "taxonomy_targets": [
+      "MisinterpretationOfToolOutput"
+    ]
+  }
+]

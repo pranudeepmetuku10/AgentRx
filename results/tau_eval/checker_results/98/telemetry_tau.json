@@ -1,0 +1,86 @@
+[
+  {
+    "task_id": "98",
+    "step_index": 1,
+    "assertion_name": "mention_both_requests_exchange_first",
+    "check_type": "python_check",
+    "check_time_sec": 0.0005,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 1,
+      "step_index": 2,
+      "function_name": "mention_both_requests_exchange_first",
+      "matched_substeps_count": 1,
+      "trajectory_length": 38
+    },
+    "check_output": {
+      "result": false,
+      "violated": true
+    }
+  },
+  {
+    "task_id": "98",
+    "step_index": 11,
+    "assertion_name": "identify_cheapest_available_green_speaker",
+    "check_type": "python_check",
+    "check_time_sec": 0.0004,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 11,
+      "step_index": 12,
+      "function_name": "identify_cheapest_available_green_speaker",
+      "matched_substeps_count": 1,
+      "trajectory_length": 38
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "98",
+    "step_index": 12,
+    "assertion_name": "verify_exchange_price_difference",
+    "check_type": "python_check",
+    "check_time_sec": 0.0006,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 12,
+      "step_index": 13,
+      "function_name": "verify_exchange_price_difference",
+      "matched_substeps_count": 1,
+      "trajectory_length": 38
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "98",
+    "step_index": 13,
+    "assertion_name": "confirm_exchange_before_second_address_request",
+    "check_type": "python_check",
+    "check_time_sec": 0.0004,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 13,
+      "step_index": 14,
+      "function_name": "confirm_exchange_before_second_address_request",
+      "matched_substeps_count": 1,
+      "trajectory_length": 38
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  }
+]

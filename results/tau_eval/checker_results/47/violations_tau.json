@@ -1,0 +1,29 @@
+[
+  {
+    "task_id": "47",
+    "step_index": 8,
+    "assertion_name": "look_up_user_requested_primary_order",
+    "invariant_type": "RELATIONAL_POST",
+    "check_type": "python_check",
+    "severity": "medium",
+    "check_hint": "For a get_order_details call in the current step, verify that the order ID is the primary ID the user instructed the agent to provide first: 9502126. Treat an optional leading # and W as formatting, but do not accept a different order number. Other tool calls are outside this assertion.",
+    "evidence": {
+      "matched_substeps": [
+        {
+          "sub_index": 1,
+          "role": "assistant",
+          "content": "[\n  {\n    \"function\": {\n      \"arguments\": \"{\\\"order_id\\\": \\\"#W1436802\\\"}\",\n      \"name\": \"get_order_details\"\n    },\n    \"id\": \"call_Far3DQrHNYoMOFdt4k86JbCW\",\n    \"type\": \"function\"\n  }\n]"
+        }
+      ],
+      "current_event": {
+        "sub_index": 1,
+        "role": "assistant",
+        "content": "[\n  {\n    \"function\": {\n      \"arguments\": \"{\\\"order_id\\\": \\\"#W1436802\\\"}\",\n      \"name\": \"get_order_details\"\n    },\n    \"id\": \"call_Far3DQrHNYoMOFdt4k86JbCW\",\n    \"type\": \"function\"\n  }\n]"
+      }
+    },
+    "taxonomy_targets": [
+      "Instruction/PlanAdherenceFailure",
+      "IntentPlanMisalignment"
+    ]
+  }
+]

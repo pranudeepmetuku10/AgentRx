@@ -1,0 +1,182 @@
+[
+  {
+    "task_id": "38",
+    "step_index": 14,
+    "assertion_name": "verify_reported_most_expensive_order_item",
+    "check_type": "python_check",
+    "check_time_sec": 0.0007,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: Import of 'decimal' is not allowed in invariant checks Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 4, in verify_reported_most_expensive_order_item\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 623, in _safe_import\n    raise ImportError(f\"Import of '{name}' is not allowed in invariant checks\")\nImportError: Import of 'decimal' is not allowed in invariant checks\n",
+    "check_input": {
+      "step_pos": 14,
+      "step_index": 14,
+      "trajectory_length": 46
+    },
+    "check_output": null
+  },
+  {
+    "task_id": "38",
+    "step_index": 26,
+    "assertion_name": "verify_product_lookup_matches_order_item",
+    "check_type": "python_check",
+    "check_time_sec": 0.0009,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 26,
+      "step_index": 27,
+      "function_name": "verify_product_lookup_matches_order_item",
+      "matched_substeps_count": 1,
+      "trajectory_length": 46
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "38",
+    "step_index": 28,
+    "assertion_name": "verify_product_lookup_matches_order_item",
+    "check_type": "python_check",
+    "check_time_sec": 0.0007,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 28,
+      "step_index": 29,
+      "function_name": "verify_product_lookup_matches_order_item",
+      "matched_substeps_count": 1,
+      "trajectory_length": 46
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "38",
+    "step_index": 30,
+    "assertion_name": "verify_product_lookup_matches_order_item",
+    "check_type": "python_check",
+    "check_time_sec": 0.0141,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 30,
+      "step_index": 31,
+      "function_name": "verify_product_lookup_matches_order_item",
+      "matched_substeps_count": 1,
+      "trajectory_length": 46
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "38",
+    "step_index": 32,
+    "assertion_name": "verify_product_lookup_matches_order_item",
+    "check_type": "python_check",
+    "check_time_sec": 0.0008,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 32,
+      "step_index": 33,
+      "function_name": "verify_product_lookup_matches_order_item",
+      "matched_substeps_count": 1,
+      "trajectory_length": 46
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "38",
+    "step_index": 36,
+    "assertion_name": "verify_cheapest_available_options_total_expression",
+    "check_type": "python_check",
+    "check_time_sec": 0.001,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: Import of 'decimal' is not allowed in invariant checks Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 6, in verify_cheapest_available_options_total_expression\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 623, in _safe_import\n    raise ImportError(f\"Import of '{name}' is not allowed in invariant checks\")\nImportError: Import of 'decimal' is not allowed in invariant checks\n",
+    "check_input": {
+      "step_pos": 36,
+      "step_index": 36,
+      "trajectory_length": 46
+    },
+    "check_output": null
+  },
+  {
+    "task_id": "38",
+    "step_index": 37,
+    "assertion_name": "verify_calculation_result_matches_expression",
+    "check_type": "python_check",
+    "check_time_sec": 0.0005,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: Import of 'decimal' is not allowed in invariant checks Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 5, in verify_calculation_result_matches_expression\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 623, in _safe_import\n    raise ImportError(f\"Import of '{name}' is not allowed in invariant checks\")\nImportError: Import of 'decimal' is not allowed in invariant checks\n",
+    "check_input": {
+      "step_pos": 37,
+      "step_index": 37,
+      "trajectory_length": 46
+    },
+    "check_output": null
+  },
+  {
+    "task_id": "38",
+    "step_index": 38,
+    "assertion_name": "verify_reported_cheapest_total_matches_calculation_result",
+    "check_type": "python_check",
+    "check_time_sec": 0.0003,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: Import of 'decimal' is not allowed in invariant checks Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 4, in verify_reported_cheapest_total_matches_calculation_result\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 623, in _safe_import\n    raise ImportError(f\"Import of '{name}' is not allowed in invariant checks\")\nImportError: Import of 'decimal' is not allowed in invariant checks\n",
+    "check_input": {
+      "step_pos": 38,
+      "step_index": 38,
+      "trajectory_length": 46
+    },
+    "check_output": null
+  },
+  {
+    "task_id": "38",
+    "step_index": 40,
+    "assertion_name": "verify_cancellation_total_matches_order_items",
+    "check_type": "python_check",
+    "check_time_sec": 0.0004,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: Import of 'decimal' is not allowed in invariant checks Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 5, in verify_cancellation_total_matches_order_items\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 623, in _safe_import\n    raise ImportError(f\"Import of '{name}' is not allowed in invariant checks\")\nImportError: Import of 'decimal' is not allowed in invariant checks\n",
+    "check_input": {
+      "step_pos": 40,
+      "step_index": 40,
+      "trajectory_length": 46
+    },
+    "check_output": null
+  },
+  {
+    "task_id": "38",
+    "step_index": 44,
+    "assertion_name": "verify_reported_refund_amount_matches_cancellation_result",
+    "check_type": "python_check",
+    "check_time_sec": 0.0003,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: Import of 'decimal' is not allowed in invariant checks Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 5, in verify_reported_refund_amount_matches_cancellation_result\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 623, in _safe_import\n    raise ImportError(f\"Import of '{name}' is not allowed in invariant checks\")\nImportError: Import of 'decimal' is not allowed in invariant checks\n",
+    "check_input": {
+      "step_pos": 44,
+      "step_index": 44,
+      "trajectory_length": 46
+    },
+    "check_output": null
+  }
+]

@@ -1,0 +1,97 @@
+[
+  {
+    "task_id": "74",
+    "step_index": 10,
+    "assertion_name": "order_lookup_uses_authenticated_users_order",
+    "check_type": "python_check",
+    "check_time_sec": 0.0005,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 10,
+      "step_index": 11,
+      "function_name": "order_lookup_uses_authenticated_users_order",
+      "matched_substeps_count": 1,
+      "trajectory_length": 30
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "74",
+    "step_index": 12,
+    "assertion_name": "product_lookup_uses_retrieved_item_product_id",
+    "check_type": "python_check",
+    "check_time_sec": 0.0005,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 12,
+      "step_index": 13,
+      "function_name": "product_lookup_uses_retrieved_item_product_id",
+      "matched_substeps_count": 1,
+      "trajectory_length": 30
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "74",
+    "step_index": 13,
+    "assertion_name": "available_laptop_variant_matches_requested_preferences",
+    "check_type": "python_check",
+    "check_time_sec": 0.0004,
+    "tokens_used": 0,
+    "success": true,
+    "error": null,
+    "check_input": {
+      "step_pos": 13,
+      "step_index": 14,
+      "function_name": "available_laptop_variant_matches_requested_preferences",
+      "matched_substeps_count": 1,
+      "trajectory_length": 30
+    },
+    "check_output": {
+      "result": true,
+      "violated": false
+    }
+  },
+  {
+    "task_id": "74",
+    "step_index": 16,
+    "assertion_name": "exchange_refund_difference_is_calculated_correctly",
+    "check_type": "python_check",
+    "check_time_sec": 0.0003,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: Import of 'decimal' is not allowed in invariant checks Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 4, in exchange_refund_difference_is_calculated_correctly\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 623, in _safe_import\n    raise ImportError(f\"Import of '{name}' is not allowed in invariant checks\")\nImportError: Import of 'decimal' is not allowed in invariant checks\n",
+    "check_input": {
+      "step_pos": 16,
+      "step_index": 16,
+      "trajectory_length": 30
+    },
+    "check_output": null
+  },
+  {
+    "task_id": "74",
+    "step_index": 27,
+    "assertion_name": "cancellation_refund_matches_payment_total",
+    "check_type": "python_check",
+    "check_time_sec": 0.0004,
+    "tokens_used": 0,
+    "success": false,
+    "error": "Exception: Import of 'decimal' is not allowed in invariant checks Traceback: Traceback (most recent call last):\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 692, in _check_python_invariant\n    result = fn(traj, step_pos)\n  File \"<string>\", line 4, in cancellation_refund_matches_payment_total\n  File \"/Users/pmetuku/Downloads/AgentRx/agentrx/invariants/checker.py\", line 623, in _safe_import\n    raise ImportError(f\"Import of '{name}' is not allowed in invariant checks\")\nImportError: Import of 'decimal' is not allowed in invariant checks\n",
+    "check_input": {
+      "step_pos": 27,
+      "step_index": 27,
+      "trajectory_length": 30
+    },
+    "check_output": null
+  }
+]
