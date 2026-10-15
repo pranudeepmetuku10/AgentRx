@@ -1,0 +1,29 @@
+{
+  "note": "Synthetic example, not from the evaluation set.",
+  "steps": [
+    {
+      "step": 5,
+      "role": "assistant",
+      "content": {
+        "tool_call": "get_order_details",
+        "arguments": {
+          "order_id": "#W1100002"
+        }
+      }
+    },
+    {
+      "step": 6,
+      "role": "tool",
+      "content": "{\"status\": \"delivered\", \"items\": [{\"name\": \"Running Shoes\", \"price\": 129.0}]}"
+    },
+    {
+      "step": 7,
+      "role": "assistant",
+      "content": "Your shoes were delivered and come with a 2-year warranty, so you can also get them repaired for free."
+    }
+  ],
+  "failure_case": 2,
+  "step_number": 7,
+  "reason": "No tool output or policy mentions a warranty or free repairs. The agent stated facts that are not grounded in any source.",
+  "why_not_other": "This is not Misinterpretation of Tool Output: the tool output says nothing about warranties, so the claim is invented rather than misread."
+}

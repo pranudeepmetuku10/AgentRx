@@ -1,0 +1,40 @@
+{
+  "note": "Synthetic example, not from the evaluation set.",
+  "steps": [
+    {
+      "step": 2,
+      "role": "user",
+      "content": "Can you change the address on my order? I'm moving."
+    },
+    {
+      "step": 5,
+      "role": "assistant",
+      "content": {
+        "tool_call": "get_user_details",
+        "arguments": {
+          "user_id": "omar_haddad_7781"
+        }
+      }
+    },
+    {
+      "step": 6,
+      "role": "tool",
+      "content": "{\"orders\": [\"#W1100006\", \"#W1100007\"], \"address\": \"12 Pine Rd\"}"
+    },
+    {
+      "step": 7,
+      "role": "assistant",
+      "content": {
+        "tool_call": "modify_pending_order_address",
+        "arguments": {
+          "order_id": "#W1100006",
+          "address1": "12 Pine Rd"
+        }
+      }
+    }
+  ],
+  "failure_case": 6,
+  "step_number": 7,
+  "reason": "The user has two orders and never said which one, nor gave the new address. Needed information was missing, and at step 7 the agent acted on a guess instead of asking.",
+  "why_not_other": "Not Instruction Adherence or Invention as the primary cause: the root problem is that the request lacked required details (which order, which address)."
+}

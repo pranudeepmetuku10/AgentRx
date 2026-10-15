@@ -1,0 +1,55 @@
+{
+  "note": "Synthetic example, not from the evaluation set.",
+  "steps": [
+    {
+      "step": 2,
+      "role": "user",
+      "content": "Please cancel order #W1100001, I ordered it by mistake. I'm lena_ortiz_4410."
+    },
+    {
+      "step": 3,
+      "role": "assistant",
+      "content": {
+        "tool_call": "find_user_id_by_email",
+        "arguments": {
+          "email": "lena.ortiz@example.com"
+        }
+      }
+    },
+    {
+      "step": 4,
+      "role": "tool",
+      "content": "lena_ortiz_4410"
+    },
+    {
+      "step": 5,
+      "role": "assistant",
+      "content": {
+        "tool_call": "get_order_details",
+        "arguments": {
+          "order_id": "#W1100001"
+        }
+      }
+    },
+    {
+      "step": 6,
+      "role": "tool",
+      "content": "{\"status\": \"pending\", \"items\": [\"Desk Lamp\"]}"
+    },
+    {
+      "step": 7,
+      "role": "assistant",
+      "content": {
+        "tool_call": "cancel_pending_order",
+        "arguments": {
+          "order_id": "#W1100001",
+          "reason": "ordered by mistake"
+        }
+      }
+    }
+  ],
+  "failure_case": 1,
+  "step_number": 7,
+  "reason": "Policy requires listing the action details and getting an explicit 'yes' before a consequential action. The agent cancelled at step 7 without asking for confirmation.",
+  "why_not_other": "The user's goal was understood correctly and nothing was invented; the agent skipped a required policy step."
+}

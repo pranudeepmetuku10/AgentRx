@@ -1,0 +1,41 @@
+{
+  "note": "Synthetic example, not from the evaluation set.",
+  "steps": [
+    {
+      "step": 9,
+      "role": "user",
+      "content": "Yes, go ahead and exchange it."
+    },
+    {
+      "step": 10,
+      "role": "assistant",
+      "content": {
+        "tool_call": "exchange_delivered_order_items",
+        "arguments": {
+          "order_id": "#W1100010",
+          "item_ids": [
+            "3300112233"
+          ],
+          "new_item_ids": [
+            "3300112244"
+          ],
+          "payment_method_id": "paypal_5510"
+        }
+      }
+    },
+    {
+      "step": 11,
+      "role": "tool",
+      "content": "Error: 504 Gateway Timeout"
+    },
+    {
+      "step": 12,
+      "role": "assistant",
+      "content": "The exchange could not be completed due to a system error. Please try again later."
+    }
+  ],
+  "failure_case": 9,
+  "step_number": 11,
+  "reason": "The tool call was valid and confirmed, but the backend timed out at step 11.",
+  "why_not_other": "Not Invalid Invocation: the arguments were well-formed; the infrastructure failed."
+}

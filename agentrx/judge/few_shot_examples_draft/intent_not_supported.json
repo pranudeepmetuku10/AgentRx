@@ -1,0 +1,41 @@
+{
+  "note": "Synthetic example, not from the evaluation set.",
+  "steps": [
+    {
+      "step": 2,
+      "role": "user",
+      "content": "Can you price-match my TV to the lower price I found at another store and refund me the difference?"
+    },
+    {
+      "step": 5,
+      "role": "assistant",
+      "content": {
+        "tool_call": "get_order_details",
+        "arguments": {
+          "order_id": "#W1100008"
+        }
+      }
+    },
+    {
+      "step": 7,
+      "role": "assistant",
+      "content": {
+        "tool_call": "modify_pending_order_items",
+        "arguments": {
+          "order_id": "#W1100008",
+          "item_ids": [
+            "9900112233"
+          ],
+          "new_item_ids": [
+            "9900112233"
+          ],
+          "payment_method_id": "gift_card_44"
+        }
+      }
+    }
+  ],
+  "failure_case": 7,
+  "step_number": 7,
+  "reason": "No available tool supports price matching or partial refunds. At step 7 the agent tried to force the request through an unrelated tool instead of explaining it can't be done or transferring to a human.",
+  "why_not_other": "Not Instruction Adherence: the core issue is that the requested action is outside what the tools can do."
+}

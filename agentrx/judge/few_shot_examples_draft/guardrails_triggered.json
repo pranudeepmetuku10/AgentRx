@@ -1,0 +1,36 @@
+{
+  "note": "Synthetic example, not from the evaluation set.",
+  "steps": [
+    {
+      "step": 2,
+      "role": "user",
+      "content": "Cancel my order #W1100009. My name is Ana Ruiz, zip 30301."
+    },
+    {
+      "step": 3,
+      "role": "assistant",
+      "content": {
+        "tool_call": "find_user_id_by_name_zip",
+        "arguments": {
+          "first_name": "Ana",
+          "last_name": "Ruiz",
+          "zip": "30301"
+        }
+      }
+    },
+    {
+      "step": 4,
+      "role": "tool",
+      "content": "Error: access denied by content safety policy for this request."
+    },
+    {
+      "step": 5,
+      "role": "assistant",
+      "content": "I'm sorry, I can't continue with this request."
+    }
+  ],
+  "failure_case": 8,
+  "step_number": 4,
+  "reason": "A safety or access policy blocked a legitimate request at step 4, which stopped the task.",
+  "why_not_other": "Not System Failure: the block is a deliberate policy decision, not an outage or timeout."
+}

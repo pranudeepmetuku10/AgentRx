@@ -1,0 +1,29 @@
+{
+  "note": "Synthetic example, not from the evaluation set.",
+  "steps": [
+    {
+      "step": 5,
+      "role": "assistant",
+      "content": {
+        "tool_call": "get_product_details",
+        "arguments": {
+          "product_id": "5500110022"
+        }
+      }
+    },
+    {
+      "step": 6,
+      "role": "tool",
+      "content": "{\"name\": \"Backpack\", \"variants\": {\"a\": {\"color\": \"black\", \"available\": true}, \"b\": {\"color\": \"green\", \"available\": false}, \"c\": {\"color\": \"navy\", \"available\": true}}}"
+    },
+    {
+      "step": 7,
+      "role": "assistant",
+      "content": "Good news, the green backpack is in stock and I can switch your order to it."
+    }
+  ],
+  "failure_case": 4,
+  "step_number": 7,
+  "reason": "The tool output at step 6 shows the green variant is unavailable. The agent read it as available at step 7.",
+  "why_not_other": "The information came from the tool, so it is not invented; the agent drew the wrong conclusion from it."
+}

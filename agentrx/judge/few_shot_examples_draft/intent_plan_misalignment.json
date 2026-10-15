@@ -1,0 +1,38 @@
+{
+  "note": "Synthetic example, not from the evaluation set.",
+  "steps": [
+    {
+      "step": 2,
+      "role": "user",
+      "content": "I'd like to exchange the medium hoodie in order #W1100005 for a large. I want to keep the order, just a different size."
+    },
+    {
+      "step": 7,
+      "role": "assistant",
+      "content": "I can return the hoodie for a refund to your credit card. Here are the details: order #W1100005, item: Hoodie (M), refund $59. Shall I proceed?"
+    },
+    {
+      "step": 8,
+      "role": "user",
+      "content": "yes"
+    },
+    {
+      "step": 9,
+      "role": "assistant",
+      "content": {
+        "tool_call": "return_delivered_order_items",
+        "arguments": {
+          "order_id": "#W1100005",
+          "item_ids": [
+            "7700112233"
+          ],
+          "payment_method_id": "credit_card_1100"
+        }
+      }
+    }
+  ],
+  "failure_case": 5,
+  "step_number": 7,
+  "reason": "The user asked for an exchange to a different size. At step 7 the agent planned a return and refund instead, which does not serve the user's goal. The later confirmation does not fix the wrong objective.",
+  "why_not_other": "Not Instruction Adherence: the agent did follow policy (listed details, got a 'yes'). The failure is pursuing the wrong objective."
+}
