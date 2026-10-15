@@ -616,7 +616,8 @@ class AllVerifier:
 
             # Allow __import__ so generated checks can do 'import json', 'import re', etc.
             # We restrict to a safe allowlist of modules.
-            _allowed_modules = {"json", "re", "math", "datetime", "collections", "itertools", "functools", "string"}
+            _allowed_modules = {"json", "re", "math", "datetime", "collections", "itertools", "functools", "string",
+                                "decimal", "fractions", "statistics", "ast", "copy"}
             _real_import = __builtins__["__import__"] if isinstance(__builtins__, dict) else __builtins__.__import__
             def _safe_import(name, *args, **kwargs):
                 if name.split(".")[0] not in _allowed_modules:
@@ -634,8 +635,12 @@ class AllVerifier:
                 "min": min, "max": max, "sum": sum, "sorted": sorted,
                 "any": any, "all": all, "zip": zip, "map": map, "filter": filter,
                 "abs": abs, "round": round, "reversed": reversed,
+                "next": next, "iter": iter, "frozenset": frozenset,
+                "divmod": divmod, "pow": pow, "ord": ord, "chr": chr, "repr": repr,
                 "ValueError": ValueError, "TypeError": TypeError,
                 "KeyError": KeyError, "IndexError": IndexError,
+                "StopIteration": StopIteration, "AttributeError": AttributeError,
+                "ZeroDivisionError": ZeroDivisionError,
                 "Exception": Exception, "True": True, "False": False, "None": None,
                 "print": print,
             }
@@ -1093,6 +1098,10 @@ class AllVerifier:
                 dbg(f"skip {inv.get('assertion_name')} -> unknown check_type={ct!r}")
 
             if vio:
+                # Report the step's 1-indexed IR ``index`` (what the judge and ground truth use),
+                # not its 0-indexed position in the steps list.
+                idx = safe_int(step_obj.get("index"))
+                vio.step_index = idx if idx is not None else step_pos + 1
                 dbg(f"VIOLATION: {vio.assertion_name} at step_pos={step_pos}")
                 violations.append(vio)
 
