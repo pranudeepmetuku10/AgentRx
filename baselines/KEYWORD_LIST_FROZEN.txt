@@ -1,0 +1,2 @@
+2026-10-27 02:29:21 EDT  sha256=dd513c23ea299f692bf6612943727ff7cf18dbd8080f32bca529ec2e050ec483  (keyword list fixed before Magentic-One inspection)
+2026-10-27 02:30:32 EDT  scorer fix only (root-cause id compared as string); KEYWORD_GROUPS unchanged. sha256=b32813d0776f0d2acab5565762ff88cba7c9156fc93ab29a94dc8fda07790a47

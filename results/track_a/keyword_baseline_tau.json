@@ -1,0 +1,277 @@
+{
+  "summary": {
+    "n": 29,
+    "step_accuracy": 0.0,
+    "category_accuracy": 0.06896551724137931,
+    "correct_steps": 0,
+    "correct_categories": 2,
+    "step_within_1": 0.1724137931034483,
+    "step_within_3": 0.20689655172413793,
+    "step_within_5": 0.2413793103448276,
+    "fired": 21,
+    "inconclusive": 8
+  },
+  "rows": [
+    {
+      "trajectory_id": "2",
+      "step_number": 6,
+      "failure_case": 9,
+      "category": "System Failure",
+      "matched": "504",
+      "gt_failure_case": 4,
+      "gt_step_number": 7
+    },
+    {
+      "trajectory_id": "3",
+      "step_number": 6,
+      "failure_case": 9,
+      "category": "System Failure",
+      "matched": "504",
+      "gt_failure_case": 4,
+      "gt_step_number": 7
+    },
+    {
+      "trajectory_id": "4",
+      "step_number": 14,
+      "failure_case": 9,
+      "category": "System Failure",
+      "matched": "504",
+      "gt_failure_case": 4,
+      "gt_step_number": 15
+    },
+    {
+      "trajectory_id": "12",
+      "step_number": 17,
+      "failure_case": 3,
+      "category": "Invalid Invocation",
+      "matched": "must be",
+      "gt_failure_case": 1,
+      "gt_step_number": 19
+    },
+    {
+      "trajectory_id": "20",
+      "step_number": 22,
+      "failure_case": 9,
+      "category": "System Failure",
+      "matched": "503",
+      "gt_failure_case": 4,
+      "gt_step_number": 21
+    },
+    {
+      "trajectory_id": "21",
+      "step_number": 48,
+      "failure_case": 10,
+      "category": "Inconclusive",
+      "matched": null,
+      "gt_failure_case": 6,
+      "gt_step_number": 28
+    },
+    {
+      "trajectory_id": "28",
+      "step_number": 14,
+      "failure_case": 9,
+      "category": "System Failure",
+      "matched": "502",
+      "gt_failure_case": 5,
+      "gt_step_number": 33
+    },
+    {
+      "trajectory_id": "31",
+      "step_number": 42,
+      "failure_case": 10,
+      "category": "Inconclusive",
+      "matched": null,
+      "gt_failure_case": 5,
+      "gt_step_number": 31
+    },
+    {
+      "trajectory_id": "32",
+      "step_number": 42,
+      "failure_case": 10,
+      "category": "Inconclusive",
+      "matched": null,
+      "gt_failure_case": 4,
+      "gt_step_number": 11
+    },
+    {
+      "trajectory_id": "34",
+      "step_number": 6,
+      "failure_case": 3,
+      "category": "Invalid Invocation",
+      "matched": "Error",
+      "gt_failure_case": 3,
+      "gt_step_number": 17
+    },
+    {
+      "trajectory_id": "38",
+      "step_number": 8,
+      "failure_case": 3,
+      "category": "Invalid Invocation",
+      "matched": "Error",
+      "gt_failure_case": 4,
+      "gt_step_number": 37
+    },
+    {
+      "trajectory_id": "39",
+      "step_number": 6,
+      "failure_case": 3,
+      "category": "Invalid Invocation",
+      "matched": "Error",
+      "gt_failure_case": 5,
+      "gt_step_number": 17
+    },
+    {
+      "trajectory_id": "41",
+      "step_number": 8,
+      "failure_case": 9,
+      "category": "System Failure",
+      "matched": "503",
+      "gt_failure_case": 5,
+      "gt_step_number": 17
+    },
+    {
+      "trajectory_id": "47",
+      "step_number": 8,
+      "failure_case": 9,
+      "category": "System Failure",
+      "matched": "502",
+      "gt_failure_case": 7,
+      "gt_step_number": 19
+    },
+    {
+      "trajectory_id": "55",
+      "step_number": 6,
+      "failure_case": 3,
+      "category": "Invalid Invocation",
+      "matched": "Error",
+      "gt_failure_case": 6,
+      "gt_step_number": 32
+    },
+    {
+      "trajectory_id": "59",
+      "step_number": 26,
+      "failure_case": 10,
+      "category": "Inconclusive",
+      "matched": null,
+      "gt_failure_case": 6,
+      "gt_step_number": 14
+    },
+    {
+      "trajectory_id": "63",
+      "step_number": 10,
+      "failure_case": 9,
+      "category": "System Failure",
+      "matched": "503",
+      "gt_failure_case": 6,
+      "gt_step_number": 32
+    },
+    {
+      "trajectory_id": "71",
+      "step_number": 36,
+      "failure_case": 10,
+      "category": "Inconclusive",
+      "matched": null,
+      "gt_failure_case": 6,
+      "gt_step_number": 24
+    },
+    {
+      "trajectory_id": "72",
+      "step_number": 28,
+      "failure_case": 10,
+      "category": "Inconclusive",
+      "matched": null,
+      "gt_failure_case": 5,
+      "gt_step_number": 21
+    },
+    {
+      "trajectory_id": "74",
+      "step_number": 5,
+      "failure_case": 9,
+      "category": "System Failure",
+      "matched": "503",
+      "gt_failure_case": 1,
+      "gt_step_number": 21
+    },
+    {
+      "trajectory_id": "79",
+      "step_number": 14,
+      "failure_case": 9,
+      "category": "System Failure",
+      "matched": "502",
+      "gt_failure_case": 6,
+      "gt_step_number": 20
+    },
+    {
+      "trajectory_id": "80",
+      "step_number": 14,
+      "failure_case": 9,
+      "category": "System Failure",
+      "matched": "504",
+      "gt_failure_case": 9,
+      "gt_step_number": 26
+    },
+    {
+      "trajectory_id": "82",
+      "step_number": 28,
+      "failure_case": 10,
+      "category": "Inconclusive",
+      "matched": null,
+      "gt_failure_case": 6,
+      "gt_step_number": 20
+    },
+    {
+      "trajectory_id": "87",
+      "step_number": 38,
+      "failure_case": 10,
+      "category": "Inconclusive",
+      "matched": null,
+      "gt_failure_case": 5,
+      "gt_step_number": 37
+    },
+    {
+      "trajectory_id": "91",
+      "step_number": 18,
+      "failure_case": 8,
+      "category": "Guardrails Triggered",
+      "matched": "403",
+      "gt_failure_case": 6,
+      "gt_step_number": 34
+    },
+    {
+      "trajectory_id": "98",
+      "step_number": 16,
+      "failure_case": 3,
+      "category": "Invalid Invocation",
+      "matched": "Error",
+      "gt_failure_case": 5,
+      "gt_step_number": 21
+    },
+    {
+      "trajectory_id": "99",
+      "step_number": 14,
+      "failure_case": 9,
+      "category": "System Failure",
+      "matched": "504",
+      "gt_failure_case": 1,
+      "gt_step_number": 35
+    },
+    {
+      "trajectory_id": "104",
+      "step_number": 48,
+      "failure_case": 9,
+      "category": "System Failure",
+      "matched": "502",
+      "gt_failure_case": 4,
+      "gt_step_number": 57
+    },
+    {
+      "trajectory_id": "105",
+      "step_number": 36,
+      "failure_case": 9,
+      "category": "System Failure",
+      "matched": "502",
+      "gt_failure_case": 7,
+      "gt_step_number": 43
+    }
+  ]
+}
